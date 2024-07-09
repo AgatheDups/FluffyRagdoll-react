@@ -7,7 +7,7 @@ export default function LostPassword (){
     
     return (
         <div>
-            <div id="content-panel">
+            <div id="content-panel-card">
                 <div className="row justify-content-center">
                     <div className="col-md-10">
                         <div className="card bg-light mb-4 custom-shadow">

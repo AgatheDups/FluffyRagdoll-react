@@ -1,27 +1,63 @@
 /* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 import Footer from "../components/Footer";
+import { useState } from "react";
 
+const isEmail = (email) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email.toUpperCase());
 
 export default function SignIn (){
+    // email
+    const [values, setValues] = useState({ email: "" });
+    const [errors, setErrors] = useState({});
+
+    const validateAndSubmitForm = (e) => {
+        e.preventDefault();
+     
+        const errors = {};
+     
+        if (!isEmail(values.email)) {
+          errors.email = "Format incorrect";
+        }
+     
+        setErrors(errors);
+     
+        if (!Object.keys(errors).length) {
+          alert(JSON.stringify(values, null, 2));
+        }
+    };
+     
+    const setEmail = (e) => {
+        setValues((values) => ({ ...values, email: e.target.value }));
+    };
+
+
+    // password
+    const [password, setPassword] = useState('');
+    const [passwordVisible, setPasswordVisible] = useState(false);
+
+    const toggleVisibility = () => {
+        setPasswordVisible(!passwordVisible);
+    };
+
     
     return (
         <div>
-            <div id="content-panel">
+            <div id="content-panel-card">
                 <div className="row justify-content-center">
                     <div className="col-md-6">
                         <div className="card bg-light mb-4 custom-shadow">
                             <div className="card-body">
-                                <form action="" method="post">
+                                <form onSubmit={validateAndSubmitForm} action="" method="post">
                                     <div className="box d-flex">
                                         <label htmlFor="email" className="form-label"></label>
-                                        <input type="email" className="form-control" id="email" placeholder="Email" required/>
-                                        <span className="valid"><ion-icon name="close-outline"></ion-icon></span>
+                                        <input type="email" className="form-control" id="email" value={values.email} onChange={setEmail} placeholder="Email" required/>
+                                        <div className="valid"><ion-icon name={isEmail(values.email) ? "checkmark-outline" : "close-outline"}></ion-icon></div>
                                     </div>
+                                    {errors.email && <div className="text-danger">{errors.email}</div>}
                                     <div className="mb-3 box d-flex">
                                         <label htmlFor="password" className="form-label"></label>
-                                        <input type="password" className="form-control" id="password" placeholder="Mot de passe" required/>
-                                        <span className="showPassword"><ion-icon name="eye-off-outline"></ion-icon></span>
+                                        <input type={passwordVisible ? 'text' : 'password'} value={password} onChange={(e) => setPassword(e.target.value)} className="form-control" id="password" placeholder="Mot de passe" required/>
+                                        <div className="showPassword" onClick={toggleVisibility}><ion-icon name={passwordVisible ? "eye-outline" : "eye-off-outline"}></ion-icon></div>
                                     </div>
                                     <div className="d-flex justify-content-end">
                                     <button type="submit" className="btn btn-danger">Connexion</button>

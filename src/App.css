@@ -35,6 +35,12 @@ nav button img{
     width: 50px;
 }
 
+@media (max-width : 450px){
+    nav button a{
+        display: none;
+    }
+}
+
 .name-site{
     align-items: center;
     margin: 0 auto;
@@ -190,7 +196,7 @@ footer p{
     width: 100%;
 }
 
-/* Page Acceuil */
+/* Page Home */
 
 p{
     font-size: 20px;
@@ -255,11 +261,15 @@ span{
     }
 }
 
-/* Page Entretien */
+#resultCalculator{
+    height: 20px;
+}
+
+/* Page Care */
 
 .card{
     margin-top: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0,0.2);
+    box-shadow: 5px 5px 5px #00000033;
 }
 
 .card h5{
@@ -270,13 +280,15 @@ span{
 .card a{
     background: #F34840;
     border-color: #F34840;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0,0.2);
+    box-shadow: 5px 5px 5px #00000033;
 }
 
-/* Page Calcul */
+/* Page WeightCaculator */
 
 #img-graph{
     width: 85%;
+    display: flex;
+    margin: 0 auto;
 }
 
 .box-sex{
@@ -302,7 +314,20 @@ span{
     padding-left: 10px;
 }
 
-/* Page Connexion / Inscription / Mdp oublier */
+/* Page SignIn / SignUp / LostPassword */
+
+#content-panel-card{
+    padding: 0 10px;
+    margin: 110px auto 10px auto;
+}
+
+@media (min-width : 650px){
+
+    #content-panel-card{
+        width: 70%;
+        margin: 110px auto 10px auto;
+    }
+}
 
 form{
     padding: 20px 30px;
@@ -320,7 +345,7 @@ form a{
 }
 
 form .box{
-    padding-bottom: 20px;
+    padding: 10px 0;
 }
 
 .box span{
@@ -333,15 +358,24 @@ form .box{
 }
 
 .valid,.valid-verif, .showPassword, .showPassword-verif{
-    width: 15px;
-    font-size: 20px;
+    width: 22px;
+    height: 22px;
+    font-size: 22px;
     color: #6B92AE !important;
     padding: 0 10px;
     align-self: center;
 }
 
+ion-icon[name="checkmark-outline"]{
+    color: #5dff5d;
+}
+
+ion-icon[name="close-outline"]{
+    color: #F34840;
+}
 
 
+/*  */
 
 
 

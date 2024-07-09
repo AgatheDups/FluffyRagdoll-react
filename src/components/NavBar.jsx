@@ -7,11 +7,26 @@ export default function NavBar (){
     const toggle = () => setIsOpen(!isOpen);
     const hide = () => setIsOpen(false);
     const show = () => setIsOpen(true);
+
+    let focusOnBtn = false;
+    let focusOnNavElement = false;
+
+    function checkNavFocus () {
+        if(!focusOnBtn && !focusOnNavElement){
+            hide();
+        }
+    }
+
     
     return (
-<nav className="navbar fixed-top">
+        <nav className="navbar fixed-top">
             <div className="container-fluid">
                 <button
+                    onBlur={() => {
+                        focusOnBtn = false;
+                        checkNavFocus()
+                    }}
+                    onFocus={() => focusOnBtn = true}
                     className={`navbar-toggler ${isOpen ? '' : 'collapsed'}`}
                     type="button"
                     onClick={toggle}
@@ -44,7 +59,7 @@ export default function NavBar (){
     )
 
     function Root(){
-        return <div className="navbar-nav">        
+        return <div className="navbar-nav" onBlur={() => {focusOnNavElement = false; checkNavFocus()}} onPointerDown={() => focusOnNavElement = true}>        
             <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/">Acceuil</NavLink>
             <hr/>
             <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/entretien">Entretien</NavLink>

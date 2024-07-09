@@ -179,6 +179,12 @@ footer p{
     padding: 10px 0 0 10px;
 }
 
+.stick-footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 /* Page Acceuil */
 
 p{

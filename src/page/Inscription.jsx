@@ -40,6 +40,6 @@ export default function Inscription (){
                 </div>
             </div>
         </div>
-        <Footer/> 
+        <Footer classFooter={'stick-footer'}/> 
     </div>)
 }

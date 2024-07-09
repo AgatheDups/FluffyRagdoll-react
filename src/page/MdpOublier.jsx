@@ -25,6 +25,6 @@ export default function MdpOublier (){
                 </div>
             </div>
         </div>
-        <Footer/>
+        <Footer classFooter={'stick-footer'}/>
     </div>)
 }

@@ -8,6 +8,6 @@ export default function Adoption (){
             <img src="../public/image/giphy.gif" alt="" />
             </div>
         </div>
-        <Footer/> 
+        <Footer classFooter={'stick-footer'}/> 
     </div>)
 }

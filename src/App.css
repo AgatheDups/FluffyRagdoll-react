@@ -1,0 +1,354 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background: url(../public/image/fond.png);
+}
+
+/* nav */
+
+nav{
+    background-color: #9CBED7;
+    height: 14vh;
+    width: 100%;
+}
+
+nav button{
+    width: 50px;
+    height: 50px;
+    border: 0px;
+    background: none;
+}
+
+.navbar-toggler{
+    border: 0px;
+}
+
+nav button img{
+    width: 50px;
+}
+
+.name-site{
+    align-items: center;
+    margin: 0 auto;
+}
+
+.navbar-toggler{
+    padding: 0;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+    border: none;
+}
+
+.navbar-toggler.collapsed .burger-icon {
+    display: block;
+}
+.navbar-toggler .burger-icon {
+    display: none;
+}
+
+.navbar-toggler.collapsed .close-icon {
+    display: none;
+}
+.navbar-toggler .close-icon {
+    display: block;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+.menu{
+    background-color: #9CBED7;
+    width: 98%;
+    margin: 10px auto 0 auto;
+
+}
+
+@media (min-width : 850px){
+    .menu{
+        width: 33%;
+        margin: 10px 5px 0 5px;
+    }
+}
+
+.nav-item img{
+    width: 25px;
+    padding: 10px 0;
+    margin-right: 2px;
+}
+
+.nav-item{
+    color: white;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.nav-link{
+    color: white;
+    margin-left: 10px;
+    font-size: 22px !important;
+}
+
+.nav-item:hover{
+    color: #cdcdcd;
+}
+
+
+nav li{
+    padding-top: 10px;
+}
+
+.navbar-nav{
+    width: 90% !important;
+    color: white !important;
+    margin: 0 auto;
+}
+
+.navbar-nav hr{
+    opacity: 1;
+}
+
+
+h1{
+    font-size: 1.3rem !important;
+}
+
+
+h1, h2{
+    color: white;
+}
+
+.name-site{
+    align-items: center;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* content */
+
+#content-panel{
+    padding: 0 10px;
+    margin: 110px auto 10px auto;
+    background: white;
+}
+
+
+h2{
+    background: #6B92AE;
+    border-radius: 5px;
+    width: 260px;
+    margin: 30px 0 20px 0 !important;
+    padding: 10px;
+}
+
+@media (min-width : 650px){
+    h2{
+        width: 70%;
+    }
+    #content-panel{
+        width: 60%;
+        margin: 110px auto 10px auto;
+    }
+}
+
+/* footer */
+
+footer{
+    background: #c5d7e3;
+    padding-top: 5px;
+    margin-top: 20px ;
+}
+
+footer p{
+    display: inline;
+    font-size: small;
+    padding: 10px 0 0 10px;
+}
+
+/* Page Acceuil */
+
+p{
+    font-size: 20px;
+}
+
+span{
+    font-weight: bold;
+}
+
+#image1{
+    margin: 20px 20px 20px 0;
+    display: inline;
+    border-radius: 30px;
+    padding: 0;
+}
+
+.bubble{
+    width: 100px;
+    height: 100px;
+    background: #FFF2D7;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+}
+
+.bubble-parent{
+    margin: 2% 2vh 2% 2vh;
+    text-align: center;
+}
+
+@media (min-width : 650px){
+    .bubble-parent{
+        margin: 2% 5vh 2% 5vh;
+    }
+}
+
+.label-ageCat{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.div-calcul-age p{
+    color:#476376;
+}
+
+.div-calcul-age select{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+@media (max-width : 1490px){
+    .intro{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .intro-text{
+        padding-left: 0;
+    }
+}
+
+/* Page Entretien */
+
+.card{
+    margin-top: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0,0.2);
+}
+
+.card h5{
+    color: #F34840 !important;
+    font-weight: 700;
+}
+
+.card a{
+    background: #F34840;
+    border-color: #F34840;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0,0.2);
+}
+
+/* Page Calcul */
+
+#img-graph{
+    width: 85%;
+}
+
+.box-sex{
+    width: 15px;
+    height: 15px;
+}
+
+.box-male{
+    background: steelblue;
+}
+
+.box-femele{
+    background: pink;
+}
+
+.legend-femele, .legend-male{
+    display: flex;
+    align-items: center;
+}
+
+.legend-graph p{
+    margin: 0 !important;
+    padding-left: 10px;
+}
+
+/* Page Connexion / Inscription / Mdp oublier */
+
+form{
+    padding: 20px 30px;
+}
+
+form button{
+    width: 150px;
+    margin: 20px 0;
+}
+
+form a{
+    color: black;
+    background: none !important;
+    box-shadow: none !important;
+}
+
+form .box{
+    padding-bottom: 20px;
+}
+
+.box span{
+    width: 16px;
+    height: 16px;
+}
+
+.showPassword, .showPassword-verif{
+    cursor: pointer;
+}
+
+.valid,.valid-verif, .showPassword, .showPassword-verif{
+    width: 15px;
+    font-size: 20px;
+    color: #6B92AE !important;
+    padding: 0 10px;
+    align-self: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Todo */
+
+#Todo{
+    display: flex;
+    justify-content: center;
+}
+

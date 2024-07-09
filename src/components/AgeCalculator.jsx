@@ -48,7 +48,9 @@ export default function AgeCalculator (){
                     <option value="240">20 ans</option>
                     <option value="252">21 ans</option>
                 </select>
-            { result !== undefined ? <p> {"L'âge de votre Ragdoll en années humaines est"} {result} {"ans"}</p> : (<></>)}
+            <div id="resultCalculator">
+                { result !== undefined ? <p> {"L'âge de votre Ragdoll en années humaines est"} {result} {"ans"}</p> : (<></>)}
+            </div>
         </div>
     )
 }

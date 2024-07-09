@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import Footer from "../components/Footer";
 
 
 export default function Inscription (){
@@ -39,5 +40,6 @@ export default function Inscription (){
                 </div>
             </div>
         </div>
+        <Footer/> 
     </div>)
 }

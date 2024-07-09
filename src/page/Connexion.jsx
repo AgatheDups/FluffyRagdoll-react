@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
+import Footer from "../components/Footer";
 
 
 export default function Connexion (){
@@ -35,5 +36,6 @@ export default function Connexion (){
                 </div>
             </div>
         </div>
+        <Footer/> 
     </div>)
 }

@@ -1,6 +1,7 @@
 import Card from "../components/Card";
 import ImagedTitledP from "../components/ImagedTitledP";
 import TitledP from "../components/TitledP";
+import Footer from "../components/Footer";
 
 
 export default function Alimentation (){
@@ -59,7 +60,7 @@ export default function Alimentation (){
             />
         </div>
         </div>
-
+        <Footer/> 
     </div>
     )
 }

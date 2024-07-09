@@ -1,4 +1,5 @@
 import TitledP from "../components/TitledP";
+import Footer from "../components/Footer";
 
 
 export default function Calcul (){
@@ -20,6 +21,7 @@ export default function Calcul (){
                 <p>La croissance du Ragdolls se fait au long de ses deux premières années, donc après ses 2ans votre Ragdoll doit se strabiliser.</p>
             </div>
         </div>
+        <Footer/> 
     </div>
     )
 }

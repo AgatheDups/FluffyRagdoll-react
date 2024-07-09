@@ -1,4 +1,4 @@
-
+import Footer from "../components/Footer";
 
 export default function Forum (){
     return (<div>
@@ -8,6 +8,6 @@ export default function Forum (){
             <img src="../public/image/giphy.gif" alt="" />
             </div>
         </div>
-
+        <Footer/> 
     </div>)
 }

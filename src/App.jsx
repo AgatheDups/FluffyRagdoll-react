@@ -9,7 +9,6 @@ import Calcul from './page/Calcul'
 import Forum from './page/Forum'
 import Connexion from './page/Connexion'
 import NavBar from './components/NavBar'
-import Footer from './components/Footer'
 import Inscription from './page/Inscription'
 import MdpOublier from './page/MdpOublier'
 
@@ -21,7 +20,6 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <Acceuil/>
-      <Footer/> 
     </div>
   },
   {
@@ -29,7 +27,6 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <Entretien/>
-      <Footer/> 
     </div>
   }
   ,
@@ -38,7 +35,6 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <Alimentation/>
-      <Footer/> 
     </div>
   }
   ,
@@ -47,7 +43,6 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <Adoption/>
-      <Footer/> 
     </div>
   },
   {
@@ -55,7 +50,6 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <Calcul/>
-      <Footer/> 
     </div>
   },
   {
@@ -63,7 +57,6 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <Forum/>
-      <Footer/> 
   </div>
   },
   {
@@ -71,7 +64,6 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <Connexion/>
-      <Footer/> 
     </div>
   },
   {
@@ -79,7 +71,6 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <Inscription/>
-      <Footer/> 
     </div>
   },
   {
@@ -87,7 +78,6 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <MdpOublier/>
-      <Footer/> 
     </div>
   }
 

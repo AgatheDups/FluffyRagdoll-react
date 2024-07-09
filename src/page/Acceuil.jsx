@@ -2,6 +2,7 @@ import AgeCalculator from "../components/AgeCalculator";
 import Bubble from "../components/Bubble";
 import ImagedTitledP from "../components/ImagedTitledP";
 import TitledP from "../components/TitledP";
+import Footer from "../components/Footer";
 
 export default function Acceuil (){
     return (<div>
@@ -30,6 +31,7 @@ export default function Acceuil (){
             <AgeCalculator/>
         </TitledP>
         </div>
+        <Footer/> 
     </div>
     )
 }

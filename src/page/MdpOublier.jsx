@@ -1,4 +1,6 @@
 /* eslint-disable react/prop-types */
+import Footer from "../components/Footer";
+
 
 
 export default function MdpOublier (){
@@ -23,5 +25,6 @@ export default function MdpOublier (){
                 </div>
             </div>
         </div>
+        <Footer/>
     </div>)
 }

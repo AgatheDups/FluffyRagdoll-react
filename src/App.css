@@ -157,10 +157,10 @@ h2{
 
 @media (min-width : 650px){
     h2{
-        width: 70%;
+        width: 75%;
     }
     #content-panel{
-        width: 60%;
+        width: 70%;
         margin: 110px auto 10px auto;
     }
 }
@@ -194,6 +194,8 @@ span{
     display: inline;
     border-radius: 30px;
     padding: 0;
+    max-height: 450px;
+    max-width: 400px;
 }
 
 .bubble{

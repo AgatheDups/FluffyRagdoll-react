@@ -1,16 +1,16 @@
 /* eslint-disable react/prop-types */
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
-import Acceuil from './page/Acceuil'
-import Entretien from './page/Entretien'
-import Alimentation from './page/Alimentation'
+import Home from './page/Home'
+import Care from './page/Care'
+import Food from './page/Food'
 import Adoption from './page/Adoption'
-import Calcul from './page/Calcul'
+import WeightCaculator from './page/WeightCaculator'
 import Forum from './page/Forum'
-import Connexion from './page/Connexion'
+import SignIn from './page/SignIn'
 import NavBar from './components/NavBar'
-import Inscription from './page/Inscription'
-import MdpOublier from './page/MdpOublier'
+import SignUp from './page/SignUp'
+import LostPassword from './page/LostPassword'
 
 
 
@@ -19,14 +19,14 @@ const router = createBrowserRouter([
     path: '/',
     element: <div>
       <NavBar/>
-      <Acceuil/>
+      <Home/>
     </div>
   },
   {
     path: '/entretien',
     element: <div>
       <NavBar/>
-      <Entretien/>
+      <Care/>
     </div>
   }
   ,
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
     path: '/alimentation',
     element: <div>
       <NavBar/>
-      <Alimentation/>
+      <Food/>
     </div>
   }
   ,
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
     path: '/calcul',
     element: <div>
       <NavBar/>
-      <Calcul/>
+      <WeightCaculator/>
     </div>
   },
   {
@@ -63,21 +63,21 @@ const router = createBrowserRouter([
     path: '/connexion',
     element: <div>
       <NavBar/>
-      <Connexion/>
+      <SignIn/>
     </div>
   },
   {
     path: '/inscription',
     element: <div>
       <NavBar/>
-      <Inscription/>
+      <SignUp/>
     </div>
   },
   {
     path: '/motdepasse-oublier',
     element: <div>
       <NavBar/>
-      <MdpOublier/>
+      <LostPassword/>
     </div>
   }
 

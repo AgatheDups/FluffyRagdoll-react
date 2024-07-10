@@ -28,14 +28,16 @@ export default function NavBar (){
                     }}
                     onFocus={() => focusOnBtn = true}
                     className={`navbar-toggler ${isOpen ? '' : 'collapsed'}`}
-                    type="button"
                     onClick={toggle}
-                    aria-controls="navbarToggleExternalContent"
-                    aria-expanded={isOpen}
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarToggleExternalContent" 
+                    aria-controls="navbarToggleExternalContent" 
+                    aria-expanded="false" 
                     aria-label="Toggle navigation"
                 >
-                    <img src="./public/image/menu-regular.png" alt="Menu" className="burger-icon" />
-                    <img src="./public/image/x-regular.png" alt="Close" className="close-icon" />
+                    <img src="./public/image/menu-regular.png" alt="Menu" className="burger-icon" /> 
+                    <img src="./public/image/x-regular.png" alt="Close" className="close-icon" /> 
                 </button>
                 <div className="name-site d-flex justify-items-center">
                     <img id="logo-fluffragdolls" src="./public/image/logo-fluffyragdolls.png" alt="Logo FluffyRagdolls" />
@@ -49,14 +51,13 @@ export default function NavBar (){
                     </NavLink>
                 </button>
             </div>
-            <div
-                className={`collapse menu col-lg-4 rounded ${isOpen ? 'show' : ''}`}
-                id="navbarToggleExternalContent"
-            >
+            <div className={`menu rounded collapse ${isOpen ? 'show' : ''}`} id="navbarToggleExternalContent">
+                {/* className remove animation */}
                 <Root />
             </div>
         </nav>
     )
+
 
     function Root(){
         return <div className="navbar-nav" onBlur={() => {focusOnNavElement = false; checkNavFocus()}} onPointerDown={() => focusOnNavElement = true}>        

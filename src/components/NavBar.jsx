@@ -59,19 +59,20 @@ export default function NavBar (){
 
 
     function Root(){
-        return <div className="navbar-nav" onBlur={() => {focusOnNavElement = false; checkNavFocus()}} onPointerDown={() => focusOnNavElement = true}>        
-            <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/">Acceuil</NavLink>
-            <hr/>
-            <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/entretien">Entretien</NavLink>
-            <hr/>
-            <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/alimentation">Alimentation & Jouet</NavLink>
-            <hr/>
-            <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/adoption">Adoption</NavLink>
-            <hr/>
-            <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/calcul">Calcul de poids</NavLink>
-            <hr/>
-            <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/forum"><img src="../public\image\chat-solid.png"/>Forum</NavLink>
-            <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/connexion"><img src="../public\image\user-circle.png"/> Connexion</NavLink>
-        </div>
+        return (
+            <div className="navbar-nav" onBlur={() => {focusOnNavElement = false; checkNavFocus()}} onPointerDown={() => focusOnNavElement = true}>        
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/">Acceuil</NavLink>
+                <hr/>
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/entretien">Entretien</NavLink>
+                <hr/>
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/alimentation">Alimentation & Jouet</NavLink>
+                <hr/>
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/adoption">Adoption</NavLink>
+                <hr/>
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/calcul">Calcul de poids</NavLink>
+                <hr/>
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/forum"><img src="../public\image\chat-solid.png"/>Forum</NavLink>
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/connexion"><img src="../public\image\user-circle.png"/> Connexion</NavLink>
+            </div>)
     }
 }

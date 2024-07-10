@@ -51,7 +51,6 @@ export default function NavBar (){
                 </button>
             </div>
             <div className={`menu rounded collapse ${isOpen ? 'show' : ''}`} id="navbarToggleExternalContent">
-                {/* className remove animation */}
                 <Root />
             </div>
         </nav>

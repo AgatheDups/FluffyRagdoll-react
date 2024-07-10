@@ -135,7 +135,7 @@ h1{
 }
 
 
-h1, h2{
+h1, h2, h5{
     color: white;
 }
 
@@ -162,7 +162,7 @@ a{
 }
 
 
-h2{
+h2, h5{
     background: #6B92AE;
     border-radius: 5px;
     width: 260px;
@@ -173,6 +173,9 @@ h2{
 @media (min-width : 650px){
     h2{
         width: 75%;
+    }
+    h5{
+        width: 33%;
     }
     #content-panel{
         width: 70%;

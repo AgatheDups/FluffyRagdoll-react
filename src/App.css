@@ -135,7 +135,7 @@ h1{
 }
 
 
-h1, h2, h5{
+h1, h2, h4{
     color: white;
 }
 
@@ -162,7 +162,7 @@ a{
 }
 
 
-h2, h5{
+h2, h4{
     background: #6B92AE;
     border-radius: 5px;
     width: 260px;
@@ -174,7 +174,7 @@ h2, h5{
     h2{
         width: 75%;
     }
-    h5{
+    h4{
         width: 33%;
     }
     #content-panel{

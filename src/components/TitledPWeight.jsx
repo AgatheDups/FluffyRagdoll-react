@@ -2,7 +2,7 @@
 
 export default function TitledPWeight ({title,children}){
     return <div>
-        <h5>{title}</h5>
+        <h4>{title}</h4>
         {children}
     </div>
 }

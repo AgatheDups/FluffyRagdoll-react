@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './App.css'
+import NavBar from './components/NavBar'
 import Home from './page/Home'
 import Care from './page/Care'
 import Food from './page/Food'
@@ -8,7 +9,6 @@ import Adoption from './page/Adoption'
 import WeightCaculator from './page/WeightCaculator'
 import Forum from './page/Forum'
 import SignIn from './page/SignIn'
-import NavBar from './components/NavBar'
 import SignUp from './page/SignUp'
 import LostPassword from './page/LostPassword'
 

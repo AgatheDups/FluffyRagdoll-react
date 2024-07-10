@@ -12,9 +12,27 @@ export default function Care(){
                 </ImagedTitledP>
                 <hr/>
                 <div className="row">
-                    <Card titleCard={"Brosse"} imageSrcCard={"../public/image/img-brosse.jpg"} imageAltCard={"Brosse pour chat"} linkCard={"#"} textCard={"Voici une brosse de la marque NekoCare."}/>
-                    <Card titleCard={"Coupe griffe"} imageSrcCard={"../public/image/img-coupe-griffes.jpg"} imageAltCard={"Coupe griffe pour chat"} linkCard={"#"} textCard={"Voici un coupe griffe de la marque PattesVelours."}/>
-                    <Card titleCard={"Dentifrice"} imageSrcCard={"../public/image/img-dentifrice.jpg"} imageAltCard={"Dentifrice pour chat"} linkCard={"#"} textCard={"Voici un dentifrice de la marque RonronNature."}/>
+                    <Card 
+                        titleCard={"Brosse"} 
+                        imageSrcCard={"../public/image/img-brosse.jpg"} 
+                        imageAltCard={"Brosse pour chat"} 
+                        linkCard={"#"} 
+                        textCard={"Voici une brosse de la marque NekoCare."}
+                    />
+                    <Card 
+                        titleCard={"Coupe griffe"} 
+                        imageSrcCard={"../public/image/img-coupe-griffes.jpg"} 
+                        imageAltCard={"Coupe griffe pour chat"} 
+                        linkCard={"#"} 
+                        textCard={"Voici un coupe griffe de la marque PattesVelours."}
+                    />
+                    <Card 
+                        titleCard={"Dentifrice"} 
+                        imageSrcCard={"../public/image/img-dentifrice.jpg"} 
+                        imageAltCard={"Dentifrice pour chat"} 
+                        linkCard={"#"} 
+                        textCard={"Voici un dentifrice de la marque RonronNature."}
+                    />
                 </div>
             </div>
             <Footer/> 

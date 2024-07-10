@@ -70,8 +70,12 @@ export default function NavBar (){
                 <hr/>
                 <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/calcul">Calcul de poids</NavLink>
                 <hr/>
-                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/forum"><img src="../public\image\chat-solid.png"/>Forum</NavLink>
-                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/connexion"><img src="../public\image\user-circle.png"/> Connexion</NavLink>
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/forum">
+                    <img src="../public\image\chat-solid.png"/>Forum
+                </NavLink>
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/connexion">
+                    <img src="../public\image\user-circle.png"/> Connexion
+                </NavLink>
             </div>)
     }
 }

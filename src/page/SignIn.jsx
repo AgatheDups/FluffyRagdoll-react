@@ -6,7 +6,7 @@ import { useState } from "react";
 const isEmail = (email) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email.toUpperCase());
 
 export default function SignIn (){
-    // email
+    // function to change invalid icon to valid for email 
     const [values, setValues] = useState({ email: "" });
     const [errors, setErrors] = useState({});
 
@@ -31,7 +31,7 @@ export default function SignIn (){
     };
 
 
-    // password
+    // function to change invalid icon to valid for password
     const [password, setPassword] = useState('');
     const [passwordVisible, setPasswordVisible] = useState(false);
 
@@ -39,7 +39,7 @@ export default function SignIn (){
         setPasswordVisible(!passwordVisible);
     };
 
-    
+    // 
     return (
         <div>
             <div id="content-panel-card">
@@ -49,15 +49,19 @@ export default function SignIn (){
                             <div className="card-body">
                                 <form onSubmit={validateAndSubmitForm} action="" method="post">
                                     <div className="box d-flex">
-                                        <label htmlFor="email" className="form-label"></label>
+                                        <label htmlFor="email" className="form-label"/>
                                         <input type="email" className="form-control" id="email" value={values.email} onChange={setEmail} placeholder="Email" required/>
-                                        <div className="valid"><ion-icon name={isEmail(values.email) ? "checkmark-outline" : "close-outline"}></ion-icon></div>
+                                        <div className="valid">
+                                            <ion-icon name={isEmail(values.email) ? "checkmark-outline" : "close-outline"}/>
+                                        </div>
                                     </div>
                                     {errors.email && <div className="text-danger">{errors.email}</div>}
                                     <div className="mb-3 box d-flex">
-                                        <label htmlFor="password" className="form-label"></label>
+                                        <label htmlFor="password" className="form-label"/>
                                         <input type={passwordVisible ? 'text' : 'password'} value={password} onChange={(e) => setPassword(e.target.value)} className="form-control" id="password" placeholder="Mot de passe" required/>
-                                        <div className="showPassword" onClick={toggleVisibility}><ion-icon name={passwordVisible ? "eye-outline" : "eye-off-outline"}></ion-icon></div>
+                                        <div className="showPassword" onClick={toggleVisibility}>
+                                            <ion-icon name={passwordVisible ? "eye-outline" : "eye-off-outline"}/>
+                                        </div>
                                     </div>
                                     <div className="d-flex justify-content-end">
                                     <button type="submit" className="btn btn-danger">Connexion</button>

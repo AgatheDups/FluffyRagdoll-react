@@ -29,6 +29,7 @@ export default function Home (){
                 </div>
             </TitledP>
             <TitledP title={"Calculer l'âge humain de votre chat"}>
+                {/* component for age calcule */}
                 <AgeCalculator/>
             </TitledP>
             </div>

@@ -8,22 +8,20 @@ import { motion } from "framer-motion"
 
 export default function Care(){
     // Paragraph and card from Json
-    const [paragraphs, setParagraphs] = useState([]);
+    const [paragraph, setParagraph] = useState({});
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
-        setParagraphs(careData.paragraph);
+        setParagraph(careData.paragraph);
         setCards(careData.card);
     },[]);
 
     return (
         <motion.div initial={{opacity:0}} animate={{opacity:1}}>
             <div id="content-panel">
-                {paragraphs.map((paragraph, index) => (
-                    <ImagedTitledP key={index} title={paragraph.title} imageSrc={paragraph.imageSrc} imageAlt={paragraph.imageAlt}>
+                    <ImagedTitledP title={paragraph.title} imageSrc={paragraph.imageSrc} imageAlt={paragraph.imageAlt}>
                         <p>{paragraph.content} <br /><br />{paragraph.content2}</p>
                     </ImagedTitledP>
-                ))}
                 <hr/>
                 <div className="row">
                     {cards.map((card, index) => (

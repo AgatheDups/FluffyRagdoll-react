@@ -1,4 +1,11 @@
 {
+    "imagedTitleP":
+    {
+        "title":"Origine",
+        "imageSrc":"../public/image/photo-home.jpg",
+        "imageAlt":"Chat Ragdoll"
+    },
+
     "origin": [
         {
             "content":"Le ragdoll est une race de chat originaire des Etats-Unis. "

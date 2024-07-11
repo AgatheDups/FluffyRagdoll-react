@@ -1,12 +1,11 @@
 {
-    "paragraph":[
-        {
-            "title":"Alimentation",
-            "imageSrc":"../public/image/photo-alimentation.jpg",
-            "imageAlt":"Chat Ragdoll",
-            "content":"En raison de son tempérament moins actif comparé à d'autres chats, le Ragdoll peut facilement prendre du poids. Il est donc essentiel d'adapter son alimentation en évitant les excès de glucides et de graisses. Il est recommandé de lui offrir des croquettes de haute qualité, riches en protéines de bonne qualité et contenant une gamme complète et équilibrée de nutriments. De plus, ce type d'alimentation sèche contribue à maintenir sa santé dentaire. Assurez-vous également que le chat ait toujours accès à de l'eau fraîche et renouvelée régulièrement."
-        }
-    ],
+    "paragraph":
+    {
+        "title":"Alimentation",
+        "imageSrc":"../public/image/photo-alimentation.jpg",
+        "imageAlt":"Chat Ragdoll",
+        "content":"En raison de son tempérament moins actif comparé à d'autres chats, le Ragdoll peut facilement prendre du poids. Il est donc essentiel d'adapter son alimentation en évitant les excès de glucides et de graisses. Il est recommandé de lui offrir des croquettes de haute qualité, riches en protéines de bonne qualité et contenant une gamme complète et équilibrée de nutriments. De plus, ce type d'alimentation sèche contribue à maintenir sa santé dentaire. Assurez-vous également que le chat ait toujours accès à de l'eau fraîche et renouvelée régulièrement."
+    },
     "foodCards":[
         {
             "titleCard": "Edgard & Cooper",

@@ -8,28 +8,31 @@ import { motion } from "framer-motion"
 
 export default function WeightCaculator (){
     // paragraphs from Json
+    const [titleP, setTitleP] = useState({});
+    const [titlePImg, setTitlePImg] = useState({});
+    const [legendGraph, setLegendGraph] = useState([]);
     const [paragraphs, setParagraphs] = useState([]);
 
     useEffect(() => {
-        setParagraphs(weightCalculatorData);
+        setTitleP(weightCalculatorData.titleP);
+        setTitlePImg(weightCalculatorData.titlePImg);
+        setLegendGraph(weightCalculatorData.legendGraph);
+        setParagraphs(weightCalculatorData.paragraph);
     },[]);
 
     return (
         <motion.div initial={{opacity:0}} animate={{opacity:1}}>
             <div id="content-panel">
-                <TitledP title={"Graphique du poids des Ragdolls"}>
-                    <img id="img-graph" src="../public/image/graphique-poids.png" alt="Graphique poids Ragdolls" />
+                <TitledP title={titleP.title}>
+                    <img id="img-graph" src={titlePImg.src} alt={titlePImg.alt} />
                 </TitledP>
                 <div className="legend-graph">
-                    <div className="legend-male">
-                        <div className="box-sex box-male"></div>
-                        <p>Poids pour un mâle</p> 
-                    </div>
-                    <div className="legend-femele">
-                        <div className="box-sex box-femele"></div>
-                        <p>Poids pour un femelle</p>
-                    </div>
-                    <br/>
+                    {legendGraph.map((legendGraph, index) => (
+                        <div key={index} className={legendGraph.className}>
+                            <div className={legendGraph.className2}></div>
+                            <p>{legendGraph.content}</p> 
+                        </div>
+                    ))}
                     {paragraphs.map((paragraph, index) => (
                         <TitledPWeight key={index} title={paragraph.title}>
                             <p>{paragraph.content}</p>

@@ -8,12 +8,14 @@ import { motion } from "framer-motion"
 import { useEffect, useState } from "react";
 
 export default function Home (){
-        // Pagragraph, Food and Toy card Json
+        // Text, pagragraph, Food and Toy card Json
+        const [imagedTitleP, setImagedTitleP] = useState({});
         const [paragraphsOrigin, setParagraphsOrigin] = useState([]);
         const [paragraphsPhysical, setParagraphsPhysical] = useState([]);
         const [paragraphsCharacter, setParagraphsCharacter] = useState([]);
     
         useEffect(() => {
+            setImagedTitleP(homeData.imagedTitleP);
             setParagraphsOrigin(homeData.origin);
             setParagraphsPhysical(homeData.physical);
             setParagraphsCharacter(homeData.character);
@@ -22,7 +24,7 @@ export default function Home (){
     return (
         <motion.div initial={{opacity:0}} animate={{opacity:1}}>
             <div id="content-panel"> 
-            <ImagedTitledP title={"Origine"} imageSrc={"../public/image/photo-home.jpg"} imageAlt={"Chat Ragdoll"}>
+            <ImagedTitledP title={imagedTitleP.title} imageSrc={imagedTitleP.imageSrc} imageAlt={imagedTitleP.imageAlt}>
                 {paragraphsOrigin.map((origin, index) => (
                     <p key={index}> {origin.content} <br/></p>
                 ))}

@@ -11,6 +11,7 @@ import Forum from './page/Forum'
 import SignIn from './page/SignIn'
 import SignUp from './page/SignUp'
 import LostPassword from './page/LostPassword'
+import ScrollToTop from './hooks/ScrollToTop'
 
 
 
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <Home/>
+      <ScrollToTop/>
     </div>
   },
   {
@@ -27,6 +29,7 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <Care/>
+      <ScrollToTop/>
     </div>
   }
   ,
@@ -35,6 +38,7 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <Food/>
+      <ScrollToTop/>
     </div>
   }
   ,
@@ -43,6 +47,7 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <Adoption/>
+      <ScrollToTop/>
     </div>
   },
   {
@@ -50,6 +55,7 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <WeightCaculator/>
+      <ScrollToTop/>
     </div>
   },
   {
@@ -57,6 +63,7 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <Forum/>
+      <ScrollToTop/>
   </div>
   },
   {
@@ -64,6 +71,7 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <SignIn/>
+      <ScrollToTop/>
     </div>
   },
   {
@@ -71,6 +79,7 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <SignUp/>
+      <ScrollToTop/>
     </div>
   },
   {
@@ -78,15 +87,17 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <LostPassword/>
+      <ScrollToTop/>
     </div>
   }
 
 ])
 
 function App() {
-  return <div>
-    <RouterProvider router={router}/>
-  </div>
+  return (
+    <div>
+      <RouterProvider router={router}/>
+    </div>)
 }
 
 export default App;

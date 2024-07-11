@@ -2,6 +2,7 @@
 import { NavLink } from "react-router-dom";
 import Footer from "../components/Footer";
 import { useState } from "react";
+import { motion } from "framer-motion"
 
 const isEmail = (email) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email.toUpperCase());
 
@@ -41,7 +42,7 @@ export default function SignIn (){
 
     // 
     return (
-        <div>
+        <motion.div initial={{opacity:0}} animate={{opacity:1}}>
             <div id="content-panel-card">
                 <div className="row justify-content-center">
                     <div className="col-md-6">
@@ -78,6 +79,6 @@ export default function SignIn (){
                 </div>
             </div>
             <Footer classFooter={'stick-footer'}/> 
-        </div>
+        </motion.div>
     )
 }

@@ -2,7 +2,8 @@ import TitledP from "../components/TitledP";
 import Footer from "../components/Footer";
 import TitledPWeight from "../components/TitledPWeight";
 import { useEffect, useState } from "react";
-import paragraphsData from "./json/weightcalculator.json"
+import weightCalculatorData from "./json/weightcalculator.json"
+import { motion } from "framer-motion"
 
 
 export default function WeightCaculator (){
@@ -10,11 +11,11 @@ export default function WeightCaculator (){
     const [paragraphs, setParagraphs] = useState([]);
 
     useEffect(() => {
-        setParagraphs(paragraphsData);
+        setParagraphs(weightCalculatorData);
     },[]);
 
     return (
-        <div>
+        <motion.div initial={{opacity:0}} animate={{opacity:1}}>
             <div id="content-panel">
                 <TitledP title={"Graphique du poids des Ragdolls"}>
                     <img id="img-graph" src="../public/image/graphique-poids.png" alt="Graphique poids Ragdolls" />
@@ -38,6 +39,6 @@ export default function WeightCaculator (){
                 </div>
             </div>
             <Footer/> 
-        </div>
+        </motion.div>
     )
 }

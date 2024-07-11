@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
 import Footer from "../components/Footer";
+import { motion } from "framer-motion"
 
 const isEmail = (email) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email.toUpperCase());
 
@@ -51,7 +52,7 @@ export default function SignUp (){
     };
     
     return (
-        <div>
+        <motion.div initial={{opacity:0}} animate={{opacity:1}}>
             <div id="content-panel-card">
                 <div className="row justify-content-center">
                     <div className="col-md-6">
@@ -92,6 +93,6 @@ export default function SignUp (){
                 </div>
             </div>
             <Footer classFooter={'stick-footer'}/> 
-        </div>
+        </motion.div>
     )
 }

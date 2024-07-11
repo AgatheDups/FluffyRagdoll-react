@@ -3,10 +3,11 @@ import Bubble from "../components/Bubble";
 import ImagedTitledP from "../components/ImagedTitledP";
 import TitledP from "../components/TitledP";
 import Footer from "../components/Footer";
+import { motion } from "framer-motion"
 
 export default function Home (){
     return (
-        <div>
+        <motion.div initial={{opacity:0}} animate={{opacity:1}}>
             <div id="content-panel"> 
             <ImagedTitledP title={"Origine"} imageSrc={"../public/image/photo-home.jpg"} imageAlt={"Chat Ragdoll"}>
             <p> Le ragdoll est une race de chat originaire des Etats-Unis. <br/> <br/>{"La race de chat Ragdoll a été créée au début des années 1960 par Ann Baker, une éleveuse de chats Persans résidant à Riverside, en Californie. Elle a obtenu cette race en croisant une chatte Persan Angora avec un chat Sacré de Birmanie, donnant ainsi naissance à un compagnon d'une douceur remarquable. Ann Baker a nommé cette nouvelle race \"Ragdoll\", ce qui signifie littéralement « poupée de chiffon »."}</p>
@@ -34,6 +35,6 @@ export default function Home (){
             </TitledP>
             </div>
             <Footer/> 
-        </div>
+        </motion.div>
     )
 }

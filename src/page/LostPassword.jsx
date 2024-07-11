@@ -1,12 +1,12 @@
 /* eslint-disable react/prop-types */
 import Footer from "../components/Footer";
-
+import { motion } from "framer-motion"
 
 
 export default function LostPassword (){
     
     return (
-        <div>
+        <motion.div initial={{opacity:0}} animate={{opacity:1}}>
             <div id="content-panel-card">
                 <div className="row justify-content-center">
                     <div className="col-md-10">
@@ -27,6 +27,6 @@ export default function LostPassword (){
                 </div>
             </div>
             <Footer classFooter={'stick-footer'}/>
-        </div>
+        </motion.div>
     )
 }

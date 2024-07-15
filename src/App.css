@@ -55,6 +55,7 @@ nav button img{
     border: none;
 }
 
+/* change icon burger */
 .navbar-toggler.collapsed .burger-icon {
     display: block;
 }
@@ -68,6 +69,7 @@ nav button img{
 .navbar-toggler .close-icon {
     display: block;
 }
+/*  */
 
 .navbar-toggler:focus,
 .navbar-toggler:active,

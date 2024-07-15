@@ -8,8 +8,8 @@ import { motion } from "framer-motion"
 
 export default function WeightCaculator (){
     // paragraphs from Json
-    const [titleP, setTitleP] = useState({});
     const [titlePImg, setTitlePImg] = useState({});
+    const [titleP, setTitleP] = useState({});
     const [legendGraph, setLegendGraph] = useState([]);
     const [paragraphs, setParagraphs] = useState([]);
 

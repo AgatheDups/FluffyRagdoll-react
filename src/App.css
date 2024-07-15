@@ -294,6 +294,10 @@ span{
     box-shadow: 5px 5px 5px #00000033;
 }
 
+.card-text{
+    min-height: 60px;
+}
+
 /* Page WeightCaculator */
 
 #img-graph{

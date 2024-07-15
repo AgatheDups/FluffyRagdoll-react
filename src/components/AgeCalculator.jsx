@@ -1,7 +1,18 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import AgeCalculatorData from "./json/agecalculator.json"
+
 
 export default function AgeCalculator (){
+    // paragraphs from Json
+    const [contentAgeCalculator, setContentAgeCalculator] = useState({});
+
+    useEffect(() => {
+        setContentAgeCalculator(AgeCalculatorData);
+
+    },[]);
+
+
     const [result, setResult] = useState()
     
     function calculateResult (months){
@@ -21,7 +32,7 @@ export default function AgeCalculator (){
     }
     return (
         <div className="div-calcul-age">
-            <label className="label-ageCat" htmlFor="ageCat">{"Sélectionnez l'âge de votre chat"}</label>
+            <label className="label-ageCat" htmlFor="ageCat">{contentAgeCalculator.label}</label>
                 <select name="ageCat" id="ageCat" onChange={e => {calculateResult(parseInt(e.target.value));}}>
                     <option value="2">2 mois</option>
                     <option value="4">4 mois</option>
@@ -49,7 +60,7 @@ export default function AgeCalculator (){
                     <option value="252">21 ans</option>
                 </select>
             <div id="resultCalculator">
-                { result !== undefined ? <p> {"L'âge de votre Ragdoll en années humaines est"} {result} {"ans"}</p> : (<></>)}
+                { result !== undefined ? <p> {contentAgeCalculator.resultatPart1} {result} {contentAgeCalculator.resultatPart2}</p> : (<></>)}
             </div>
         </div>
     )

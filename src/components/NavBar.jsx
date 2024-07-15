@@ -1,8 +1,20 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import NavBarData from "./json/navbar.json"
+
 
 export default function NavBar (){
+    // Name of NavLink Json
+    const [navLink, setNavLink] = useState({});
+
+
+    useEffect(() => {
+        setNavLink(NavBarData);
+    },[]);
+
+
+    // function for check focus
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
     const hide = () => setIsOpen(false);
@@ -60,21 +72,21 @@ export default function NavBar (){
     function Root(){
         return (
             <div className="navbar-nav" onBlur={() => {focusOnNavElement = false; checkNavFocus()}} onPointerDown={() => focusOnNavElement = true}>        
-                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/">Acceuil</NavLink>
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/">{navLink.linkHome}</NavLink>
                 <hr/>
-                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/entretien">Entretien</NavLink>
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/entretien">{navLink.linkCare}</NavLink>
                 <hr/>
-                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/alimentation">Alimentation & Jouet</NavLink>
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/alimentation">{navLink.linkFood}</NavLink>
                 <hr/>
-                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/adoption">Adoption</NavLink>
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/adoption">{navLink.linkAdoption}</NavLink>
                 <hr/>
-                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/calcul">Calcul de poids</NavLink>
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/calcul">{navLink.linkWeightCalculator}</NavLink>
                 <hr/>
                 <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/forum">
-                    <img src="../public\image\chat-solid.png"/>Forum
+                    <img src="../public\image\chat-solid.png"/>{navLink.linkForum}
                 </NavLink>
                 <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/connexion">
-                    <img src="../public\image\user-circle.png"/> Connexion
+                    <img src="../public\image\user-circle.png"/> {navLink.linkConnection}
                 </NavLink>
             </div>)
     }

@@ -10,15 +10,19 @@ import { useEffect, useState } from "react";
 export default function Home (){
         // Text, pagragraph, Food and Toy card Json
         const [imagedTitleP, setImagedTitleP] = useState({});
+        const [titleP, setTitleP] = useState({});
         const [paragraphsOrigin, setParagraphsOrigin] = useState([]);
         const [paragraphsPhysical, setParagraphsPhysical] = useState([]);
         const [paragraphsCharacter, setParagraphsCharacter] = useState([]);
+        const [paragraphsExpectancy, setParagraphsExpectancy] = useState([]);
     
         useEffect(() => {
             setImagedTitleP(homeData.imagedTitleP);
+            setTitleP(homeData.titleP);
             setParagraphsOrigin(homeData.origin);
             setParagraphsPhysical(homeData.physical);
-            setParagraphsCharacter(homeData.character);
+            setParagraphsCharacter(homeData.character); 
+            setParagraphsExpectancy(homeData.bubble); 
         },[]);
 
     return (
@@ -29,25 +33,26 @@ export default function Home (){
                     <p key={index}> {origin.content} <br/></p>
                 ))}
             </ImagedTitledP>
-            <TitledP title={"Caratéristique physique"}>
+            <TitledP title={titleP.titlePhysical}>
             {paragraphsPhysical.map((physical, index) => (
                 <p key={index}>
                 <span>{physical.span}</span>{physical.content}<br/>
                 </p>
             ))}
             </TitledP>
-            <TitledP title={"Caractère et comportement"}>
+            <TitledP title={titleP.titleCharacter}>
                 {paragraphsCharacter.map((character,index) =>(
                     <p key={index}>{character.content}</p>
                 ))}
             </TitledP>
-            <TitledP title={"Espérance de vie"}>
+            <TitledP title={titleP.titleExpectancy}>
                 <div className="d-flex">
-                    <Bubble age={"12 ans"} title={"Minimum"}/>
-                    <Bubble age={"17 ans"} title={"Maximum"}/>
+                {paragraphsExpectancy.map((bubble, index) => (
+                    <Bubble key={index} age={bubble.age} title={bubble.title}/>
+                ))}
                 </div>
             </TitledP>
-            <TitledP title={"Calculer l'âge humain de votre chat"}>
+            <TitledP title={titleP.titleCalculator}>
                 {/* component for age calcule */}
                 <AgeCalculator/>
             </TitledP>

@@ -5,7 +5,24 @@
         "imageSrc":"../public/image/photo-home.jpg",
         "imageAlt":"Chat Ragdoll"
     },
+    "titleP":
+    {
+        "titlePhysical":"Caratéristique physique",
+        "titleCharacter":"Caractère et comportement",
+        "titleExpectancy":"Espérance de vie",
+        "titleCalculator":"Calculer l'âge humain de votre chat"
+    },
 
+    "bubble": [
+        {
+            "age":"12 ans",
+            "title":"Minimum"
+        },
+        {
+            "age":"17 ans",
+            "title":"Maximum"
+        }
+    ],
     "origin": [
         {
             "content":"Le ragdoll est une race de chat originaire des Etats-Unis. "

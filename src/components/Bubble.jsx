@@ -5,9 +5,9 @@ export default function Bubble ({age,title}){
     return (
         <div className="bubble-parent">
             <div className="bubble">
-                {age}
+                <p>{age}</p>
             </div>
-            {title}
+            <p>{title}</p>
         </div>
     )
 }

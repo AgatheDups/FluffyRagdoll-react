@@ -231,6 +231,10 @@ span{
     text-align: center;
 }
 
+.bubble p{
+    margin-bottom: 0;
+}
+
 .bubble-parent{
     margin: 2% 2vh 2% 2vh;
     text-align: center;

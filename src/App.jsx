@@ -11,6 +11,7 @@ import Forum from './page/Forum'
 import SignIn from './page/SignIn'
 import SignUp from './page/SignUp'
 import LostPassword from './page/LostPassword'
+import NotFound from './page/NotFound'
 import ScrollToTop from './hooks/ScrollToTop'
 
 
@@ -87,6 +88,14 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <LostPassword/>
+      <ScrollToTop/>
+    </div>
+  },
+  {
+    path: '*',
+    element: <div>
+      <NavBar/>
+      <NotFound />
       <ScrollToTop/>
     </div>
   }

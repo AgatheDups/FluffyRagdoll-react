@@ -41,7 +41,7 @@ export default function Food (){
                     ))}
                 </div>
                 <hr />
-                <TitledP title={"Jouets"}/>
+                <TitledP title={paragraph.title2}/>
                 <div className="row">
                     {toyCards.map((toyCard, index) => (
                     <Card key={index}

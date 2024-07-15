@@ -1,11 +1,7 @@
 {   
     "titleP":
     {
-        "title":"Graphique du poids des Ragdolls"
-    },
-
-    "titlePImg":
-    {
+        "title":"Graphique du poids des Ragdolls",
         "src":"../public/image/graphique-poids.png",
         "alt":"Graphique poids Ragdolls"
     },

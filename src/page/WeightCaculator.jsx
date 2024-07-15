@@ -8,14 +8,12 @@ import { motion } from "framer-motion"
 
 export default function WeightCaculator (){
     // paragraphs from Json
-    const [titlePImg, setTitlePImg] = useState({});
     const [titleP, setTitleP] = useState({});
     const [legendGraph, setLegendGraph] = useState([]);
     const [paragraphs, setParagraphs] = useState([]);
 
     useEffect(() => {
         setTitleP(weightCalculatorData.titleP);
-        setTitlePImg(weightCalculatorData.titlePImg);
         setLegendGraph(weightCalculatorData.legendGraph);
         setParagraphs(weightCalculatorData.paragraph);
     },[]);
@@ -24,7 +22,7 @@ export default function WeightCaculator (){
         <motion.div initial={{opacity:0}} animate={{opacity:1}}>
             <div id="content-panel">
                 <TitledP title={titleP.title}>
-                    <img id="img-graph" src={titlePImg.src} alt={titlePImg.alt} />
+                    <img id="img-graph" src={titleP.src} alt={titleP.alt} />
                 </TitledP>
                 <div className="legend-graph">
                     {legendGraph.map((legendGraph, index) => (

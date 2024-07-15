@@ -32,6 +32,7 @@ export default function Care(){
                             imageAltCard={card.imageAltCard} 
                             linkCard={card.linkCard} 
                             textCard={card.textCard}
+                            buttonCard={card.buttonCard}
                         />
                     ))}
                 </div>

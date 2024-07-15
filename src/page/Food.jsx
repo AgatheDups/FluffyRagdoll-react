@@ -35,7 +35,9 @@ export default function Food (){
                         imageSrcCard={foodCard.imageSrcCard}
                         imageAltCard={foodCard.imageAltCard} 
                         linkCard={foodCard.linkCard}
-                        textCard={foodCard.textCard}/>
+                        textCard={foodCard.textCard}
+                        buttonCard={foodCard.buttonCard}
+                    />
                     ))}
                 </div>
                 <hr />
@@ -48,6 +50,7 @@ export default function Food (){
                         imageAltCard={toyCard.imageAltCard} 
                         linkCard={toyCard.linkCard} 
                         textCard={toyCard.textCard}
+                        buttonCard={toyCard.buttonCard}
                     />
                     ))}
                 </div>

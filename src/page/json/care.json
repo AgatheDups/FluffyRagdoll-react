@@ -13,21 +13,24 @@
             "imageSrcCard": "../public/image/img-brosse.jpg",
             "imageAltCard": "Brosse pour chat",
             "linkCard": "#",
-            "textCard": "Voici une brosse pour chat de la marque NekoCare."
+            "textCard": "Voici une brosse pour chat de la marque NekoCare.",
+            "buttonCard": "Lire plus ..."
         },
         {
             "titleCard": "Coupe griffe",
             "imageSrcCard": "../public/image/img-coupe-griffes.jpg",
             "imageAltCard": "Coupe griffe pour chat",
             "linkCard": "#",
-            "textCard": "Voici un coupe griffe de la marque PattesVelours."
+            "textCard": "Voici un coupe griffe de la marque PattesVelours.",
+            "buttonCard": "Lire plus ..."
         },
         {
             "titleCard": "Dentifrice",
             "imageSrcCard": "../public/image/img-dentifrice.jpg",
             "imageAltCard": "Dentifrice pour chat",
             "linkCard": "#",
-            "textCard": "Voici un dentifrice de la marque RonronNature."
+            "textCard": "Voici un dentifrice de la marque RonronNature.",
+            "buttonCard": "Lire plus ..."
         }
     ]
 

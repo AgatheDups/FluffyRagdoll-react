@@ -1,9 +1,18 @@
 /* eslint-disable react/prop-types */
+import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
+import LostPasswordData from "./json/lostpassword.json"
 import { motion } from "framer-motion"
 
 
 export default function LostPassword (){
+        // placeholder email and button in Json
+        const [contentLostPassword, setContentLostPassword] = useState({});
+
+
+        useEffect(() => {
+            setContentLostPassword(LostPasswordData);
+        },[]);
     
     return (
         <motion.div initial={{opacity:0}} animate={{opacity:1}}>
@@ -15,10 +24,10 @@ export default function LostPassword (){
                                 <form action="" method="post">
                                     <div className="box d-flex">
                                         <label htmlFor="email" className="form-label"></label>
-                                        <input type="email" className="form-control" id="email" placeholder="Email" required/>
+                                        <input type="email" className="form-control" id="email" placeholder={contentLostPassword.pEmail} required/>
                                     </div>
                                     <div className="d-flex justify-content-end">
-                                    <button type="submit" className="btn btn-danger">Réinitialisation</button>
+                                    <button type="submit" className="btn btn-danger">{contentLostPassword.buttonReset}</button>
                                     </div>
                                 </form>
                             </div>

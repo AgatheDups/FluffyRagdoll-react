@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 
 
 export default function NotFound(){
+    // H2 in json
     const [h2, setH2] = useState({});
 
     useEffect(() => {

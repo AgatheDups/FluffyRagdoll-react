@@ -1,0 +1,32 @@
+{   
+    "titleP":
+    {
+        "title":"Weight Chart for Ragdolls",
+        "src":"../public/image/graphique-poids.png",
+        "alt":"Weight Chart for Ragdolls"
+    },
+    "legendGraph":
+    [
+        {
+            "className":"legend-male",
+            "className2":"box-sex box-male",
+            "content":"Weight for a Male"
+        },
+        {
+            "className":"legend-femele",
+            "className2":"box-sex box-femele",
+            "content":"Weight for a Female"
+        }
+    ],
+    "paragraph":
+    [
+        {
+            "title": "At Birth and at 3 Months",
+            "content": "The birth weight of this breed generally ranges between 80 and 130 grams. The gender of the kittens also influences their weight. At three months, females weigh between 1.2 and 1.63 kg, while males can reach 2.3 kg. However, it is essential to note that there are no absolute rules regarding growth."
+        },
+        {
+            "title": "At Over One Year and Adulthood",
+            "content": "This docile-natured feline weighs between 3.5 and 7 kg at one year of age. The female usually weighs between 3.5 and 5.4 kg, while the male ranges between 6 and 7.7 kg. In adulthood, a Ragdoll can weigh from 8 to 10 kg. Females often reach a maximum weight of 8 kg, and some males can even reach up to 17 kg."
+        }
+    ]
+}

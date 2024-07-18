@@ -1,30 +1,25 @@
 import Card from "../components/Card";
 import ImagedTitledP from "../components/ImagedTitledP";
 import Footer from "../components/Footer";
-import careData from "./json/care.json"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion"
+import { getCareData } from "../InternationalIzer";
 
 
 export default function Care(){
-    // Paragraph and card from Json
-    const [paragraph, setParagraph] = useState({});
-    const [cards, setCards] = useState([]);
-
-    useEffect(() => {
-        setParagraph(careData.paragraph);
-        setCards(careData.card);
-    },[]);
+    // Call Json
+    // eslint-disable-next-line no-unused-vars
+    const [careData, _] = useState(getCareData())
 
     return (
         <motion.div initial={{opacity:0}} animate={{opacity:1}}>
             <div id="content-panel">
-                    <ImagedTitledP title={paragraph.title} imageSrc={paragraph.imageSrc} imageAlt={paragraph.imageAlt}>
-                        <p>{paragraph.content} <br /><br />{paragraph.content2}</p>
+                    <ImagedTitledP title={careData.paragraph.title} imageSrc={careData.paragraph.imageSrc} imageAlt={careData.paragraph.imageAlt}>
+                        <p>{careData.paragraph.content} <br /><br />{careData.paragraph.content2}</p>
                     </ImagedTitledP>
                 <hr/>
                 <div className="row">
-                    {cards.map((card, index) => (
+                    {careData.card.map((card, index) => (
                         <Card 
                             key={index}
                             titleCard={card.titleCard} 

@@ -1,0 +1,65 @@
+{
+    "imagedTitleP":
+    {
+        "title":"Origin",
+        "imageSrc":"../public/image/photo-home.jpg",
+        "imageAlt":"Ragdoll Cat"
+    },
+    "titleP":
+    {
+        "titlePhysical":"Physical characteristic",
+        "titleCharacter":"Character and behavior",
+        "titleExpectancy":"Life expectancy",
+        "titleCalculator":"Calculate your cat's human age"
+    },
+
+    "bubble": [
+        {
+            "age":"12 years",
+            "title":"Minimum"
+        },
+        {
+            "age":"17 years",
+            "title":"Maximum"
+        }
+    ],
+    "origin": [
+        {
+            "content":"The Ragdoll is a cat breed originating from the United States. "
+        },
+        {
+            "content":"The Ragdoll cat breed was created in the early 1960s by Ann Baker, a Persian cat breeder residing in Riverside, California. She developed this breed by crossing a Persian Angora cat with a Sacred Birman cat, resulting in a remarkably gentle companion. Ann Baker named this new breed 'Ragdoll', which literally means « ragdoll »."
+        }
+    ],
+    "physical": [
+        {
+            "span": "Its body ",
+            "content":"is powerfully built, heavy and long, fitting into a rectangle. The neck is short and well-muscled, the chest broad and rounded, and the legs are of medium size with a sturdy bone structure."
+        },
+        {
+            "span": "Its fur ",
+            "content":"is medium-long and silky. The topcoat is well-supplied and accompanied by an undercoat. It is shorter on the front legs and longer and denser on the hind legs. The ruff is particularly sought after."
+        },
+        {
+            "span": "Its head ",
+            "content":"is triangular with rounded contours, and the skull and forehead are also rounded. The muzzle is of medium length, well-developed, with a well-defined chin"
+        },
+        {
+            "span": "Its eyes ",
+            "content":"are large, oval-shaped, slightly slanted without tending towards the oriental style. The color is a very intense blue"
+        },
+        {
+            "span": "Its ears ",
+            "content":"are medium-sized, broad at the base, extending the triangular shape of the head, and slightly pointed forward. The tips are rounded. "
+        },
+        {
+            "span": "Its tail ",
+            "content":"is long, broad at the base, and generously covered with fur."
+        }
+    ],
+    "character":[
+        {
+            "content":"The gentleness of the Ragdoll is one of its most remarkable characteristics. This cat displays no form of aggression. Its exemplary patience makes it an ideal companion for children. Very calm and discreet, it constantly seeks tranquility and dislikes agitation. It also does not appreciate solitude and spends most of its time near its owner. Towards the latter, it is very affectionate, loving cuddles, sitting on their lap, and even being held in their arms. The Ragdoll is above all an indoor cat, preferring the quiet, comfort, and safety of the home to the hustle and bustle of the outside world."
+        }
+    ]
+}

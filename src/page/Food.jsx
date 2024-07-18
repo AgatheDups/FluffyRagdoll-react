@@ -2,34 +2,26 @@ import Card from "../components/Card";
 import ImagedTitledP from "../components/ImagedTitledP";
 import TitledP from "../components/TitledP";
 import Footer from "../components/Footer";
-import foodData from "./json/food.json"
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion"
+import { getFoodData } from "../InternationalIzer";
 
 
 export default function Food (){
-    // Pagragraph, Food and Toy card Json
-    const [paragraph, setParagraph] = useState({});
-    const [foodCards, setFoodCards] = useState([]);
-    const [toyCards, setToyCards] = useState([]);
-    
-
-    useEffect(() => {
-        setParagraph(foodData.paragraph);
-        setFoodCards(foodData.foodCards);
-        setToyCards(foodData.toyCards);
-    },[]);
+    // Call Json
+    // eslint-disable-next-line no-unused-vars
+    const [foodData, _] = useState(getFoodData())
         
     
     return (
         <motion.div initial={{opacity:0}} animate={{opacity:1}}>
             <div id="content-panel">
-                <ImagedTitledP title={paragraph.title} imageSrc={paragraph.imageSrc} imageAlt={paragraph.imageAlt}>
-                <p>{paragraph.content}</p>
+                <ImagedTitledP title={foodData.paragraph.title} imageSrc={foodData.paragraph.imageSrc} imageAlt={foodData.paragraph.imageAlt}>
+                <p>{foodData.paragraph.content}</p>
                 </ImagedTitledP>
                 <hr />
                 <div className="row">
-                    {foodCards.map((foodCard, index) => (
+                    {foodData.foodCards.map((foodCard, index) => (
                     <Card key={index} 
                         titleCard={foodCard.titleCard}
                         imageSrcCard={foodCard.imageSrcCard}
@@ -41,9 +33,9 @@ export default function Food (){
                     ))}
                 </div>
                 <hr />
-                <TitledP title={paragraph.title2}/>
+                <TitledP title={foodData.paragraph.title2}/>
                 <div className="row">
-                    {toyCards.map((toyCard, index) => (
+                    {foodData.toyCards.map((toyCard, index) => (
                     <Card key={index}
                         titleCard={toyCard.titleCard} 
                         imageSrcCard={toyCard.imageSrcCard} 

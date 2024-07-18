@@ -189,14 +189,18 @@ h2, h4{
 
 footer{
     background: #c5d7e3;
-    padding-top: 5px;
-    margin-top: 20px ;
+    margin-top: 20px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer p{
     display: inline;
     font-size: small;
-    padding: 10px 0 0 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .stick-footer{
@@ -204,6 +208,14 @@ footer p{
     bottom: 0;
     width: 100%;
 }
+
+.btn-language, .img-language{
+    width: 40px;
+    height: 35px;
+    border: none;
+    background: none;
+}
+
 
 /* Page Home */
 

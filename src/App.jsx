@@ -13,6 +13,7 @@ import SignUp from './page/SignUp'
 import LostPassword from './page/LostPassword'
 import NotFound from './page/NotFound'
 import ScrollToTop from './hooks/ScrollToTop'
+import Contact from './page/Contact'
 
 
 
@@ -88,6 +89,14 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <LostPassword/>
+      <ScrollToTop/>
+    </div>
+  },
+  {
+    path: '/contact',
+    element: <div>
+      <NavBar/>
+      <Contact/>
       <ScrollToTop/>
     </div>
   },

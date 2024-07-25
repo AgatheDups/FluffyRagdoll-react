@@ -15,6 +15,8 @@ import foodDataFr from "./page/json/fr/food.json"
 import foodDataEn from "./page/json/en/food.json"
 import careDataFr from "./page/json/fr/care.json"
 import careDataEn from "./page/json/en/care.json"
+import contactDataFr from "./page/json/fr/contact.json"
+import contactDataEn from "./page/json/en/contact.json"
 import ageCalculatorDataFr from "./components/json/fr/agecalculator.json"
 import ageCalculatorDataEn from "./components/json/en/agecalculator.json"
 import navBarDataFr from "./components/json/fr/navbar.json"
@@ -83,6 +85,14 @@ export function getCareData (){
         return careDataFr
     } else {
         return careDataEn
+    }
+}
+
+export function getContactData (){
+    if(localStorage.getItem("language") == "fr" || localStorage.getItem("language") == null){
+        return contactDataFr
+    } else {
+        return contactDataEn
     }
 }
 

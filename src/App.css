@@ -11,7 +11,7 @@ body{
 /* nav */
 
 nav{
-    background-color: #9CBED7;
+    background: linear-gradient(90deg, rgba(156,190,215,1) 40%, rgba(197, 215, 227) 100%);
     height: 9.5vh;
     width: 100%;
 }
@@ -159,7 +159,7 @@ a{
 
 #content-panel{
     padding: 0 10px;
-    margin: 110px auto 10px auto;
+    margin: 80px auto 10px auto;
     background: white;
 }
 
@@ -181,7 +181,7 @@ h2, h4{
     }
     #content-panel{
         width: 70%;
-        margin: 110px auto 10px auto;
+        margin: 100px auto 10px auto;
     }
 }
 
@@ -207,6 +207,11 @@ footer p{
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+#link-contact{
+    color: black;
+    text-decoration: underline;
 }
 
 .btn-language, .img-language{
@@ -408,17 +413,34 @@ ion-icon[name="close-outline"]{
 }
 
 
-/*  */
+/* Contact */
 
+textarea {
+    height: 150px;
+    resize: vertical;
+}
 
+.box-contact input, .box-contact textarea{
+    width: 100%;
+    padding: 5px;
+}
 
+.card-contact{
+    display: flex;
+    flex-direction: column;
+}
 
+.card-contact button{
+    width: 40%;
+    margin: 0 auto;
+}
 
-
-
-
-
-
+h6{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    color: #336f9a;
+}
 
 
 

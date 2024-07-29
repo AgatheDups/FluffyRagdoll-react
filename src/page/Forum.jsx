@@ -6,7 +6,7 @@ export default function Forum (){
         <motion.div initial={{opacity:0}} animate={{opacity:1}}>
             <div id="content-panel">
                 <div id="Todo">
-                <img src="../public/image/giphy.gif" alt="" />
+                <img src="../public/assets/giphy.gif" alt="" />
                 </div>
             </div>
             <Footer classFooter={'stick-footer'}/> 

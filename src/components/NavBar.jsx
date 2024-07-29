@@ -43,18 +43,18 @@ export default function NavBar (){
                     aria-expanded="false" 
                     aria-label="Toggle navigation"
                 >
-                    <img src="./public/image/menu-regular.png" alt="Menu" className="burger-icon" /> 
-                    <img src="./public/image/x-regular.png" alt="Close" className="close-icon" /> 
+                    <img src="./public/assets/menu-regular.png" alt="Menu" className="burger-icon" /> 
+                    <img src="./public/assets/x-regular.png" alt="Close" className="close-icon" /> 
                 </button>
                 <div className="name-site d-flex justify-items-center">
-                    <img id="logo-fluffragdolls" src="./public/image/logo-fluffyragdolls.png" alt="Logo FluffyRagdolls" />
+                    <img id="logo-fluffragdolls" src="./public/assets/logo-fluffyragdolls.png" alt="Logo FluffyRagdolls" />
                     <NavLink to="/" onClick={hide}>
                         <h1>FluffyRagdolls</h1>
                     </NavLink>
                 </div>
                 <button>
                     <NavLink to="/connexion" onClick={hide}>
-                        <img src="./public/image/user-circle.png" alt="User" />
+                        <img src="./public/assets/user-circle.png" alt="User" />
                     </NavLink>
                 </button>
             </div>

@@ -9,10 +9,10 @@ export default function LanguageChanger(){
     return (
         <div className="div-language">
             <button className="btn-language" onClick={() => changeLanguage("fr")}>
-                <img className="img-language" src="/image/drapeau-france.png" alt="" />
+                <img className="img-language" src="/assets/drapeau-france.png" alt="" />
             </button>
             <button className="btn-language" onClick={() => changeLanguage("en")}>
-                <img className="img-language" src="/image/drapeau-R-U.png" alt="" />
+                <img className="img-language" src="/assets/drapeau-R-U.png" alt="" />
             </button>
         </div>
     )

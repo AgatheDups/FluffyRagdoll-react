@@ -3,14 +3,14 @@
     {
         "title":"Feeding",
         "title2":"Toys",
-        "imageSrc":"../public/image/photo-alimentation.jpg",
+        "imageSrc":"../public/assets/photo-alimentation.jpg",
         "imageAlt":"Ragdoll Cat",
         "content":"Due to its less active temperament compared to other cats, the Ragdoll can easily gain weight. Therefore, it is essential to adapt its diet by avoiding excess carbohydrates and fats. It is recommended to provide it with high-quality kibble, rich in good quality proteins and containing a complete and balanced range of nutrients. Additionally, this type of dry food helps maintain its dental health. Also, ensure that the cat always has access to fresh water, which is regularly renewed."
     },
     "foodCards":[
         {
             "titleCard": "Edgard & Cooper",
-            "imageSrcCard": "../public/image/croquette-EC.webp",
+            "imageSrcCard": "../public/assets/croquette-EC.webp",
             "imageAltCard": "Edgard & Cooper Kibble",
             "linkCard": "https://www.edgardcooper.com/fr/products/cat-dry-chicken/4-kg/?gad_source=1&gclid=Cj0KCQjw6uWyBhD1ARIsAIMcADqaHNzY3yfuE35NaNMSwkGuM3MSSJIpQgaZFzKo-adItsKoX3mQFjEaApMhEALw_wcB",
             "textCard": "Cat kibble from the Edgard & Cooper brand, priced at €41.99 for 4kg.",
@@ -18,7 +18,7 @@
         },
         {
             "titleCard": "Ultra premium",
-            "imageSrcCard": "../public/image/croquette-UP.webp",
+            "imageSrcCard": "../public/assets/croquette-UP.webp",
             "imageAltCard": "Ultra premium Kibble",
             "linkCard": "https://www.ultrapremiumdirect.com/produits/croquettes-sans-cereales-pour-chat-adulte-sterilise-ou-d-interieur/00300201/?wiz_source=google&wiz_medium=cpc&wiz_campaign=PMAX-Chat-Novembre-2022&utm_source=google&utm_medium=cpc&utm_campaign=[PMAX]+-+Chat+Novembre+2022&gad_source=1&gclid=CjwKCAjwr7ayBhAPEiwA6EIGxPtTH3SOvetvVRmDvY-vgvnVEFyVAFU8GHm9ive4thCtV51NgJxeHBoC290QAvD_BwE",
             "textCard": "Cat kibble from the Ultra premium brand, priced at €29.90 for 4kg.",
@@ -26,7 +26,7 @@
         },
         {
             "titleCard": "Royal canin",
-            "imageSrcCard": "../public/image/croquette-RC.jpg",
+            "imageSrcCard": "../public/assets/croquette-RC.jpg",
             "imageAltCard": "Royal canin Kibble",
             "linkCard": "https://www.zooplus.fr/shop/chats/croquettes_chat/royal_canin_croquettes_chat/royal_canin_nourriture_par_race_croquettes_chat/378398?variantId=378398.1&abd=true&activeVariant=378398.1",
             "textCard": "Cat kibble from the Royal canin brand, priced at €32.99 for 2kg.",
@@ -36,7 +36,7 @@
     "toyCards":[
         {
             "titleCard": "Ball",
-            "imageSrcCard": "../public/image/jouet-balle.jpg",
+            "imageSrcCard": "../public/assets/jouet-balle.jpg",
             "imageAltCard": "Cat ball",
             "linkCard": "https://www.amazon.fr/ILantule-Interactif-Interieur-Automatique-Chargement/dp/B0C3VSZY8M/ref=asc_df_B0C3VSZY8M/?tag=googshopfr-21&linkCode=df0&hvadid=648910860377&hvpos=&hvnetw=g&hvrand=16504193684166196114&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9055805&hvtargid=pla-2193648042627&psc=1&mcid=434a03bf199a3b5eb8b3659f48a6bfeb",
             "textCard": "Here is an interactive ball that moves on its own.",
@@ -44,7 +44,7 @@
         },
         {
             "titleCard": "Cat Tree",
-            "imageSrcCard": "../public/image/jouet-arbre.jpg",
+            "imageSrcCard": "../public/assets/jouet-arbre.jpg",
             "imageAltCard": "Cat Tree",
             "linkCard": "https://www.amazon.fr/Griffoir-descalade-plusieurs-dactivit%C3%A9-plates-formes/dp/B0BN9YXPTN/ref=asc_df_B0BN9YXPTN/?tag=googshopfr-21&linkCode=df0&hvadid=603001020651&hvpos=&hvnetw=g&hvrand=16504193684166196114&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9055805&hvtargid=pla-1931938098711&mcid=e59595d6826a3335ad252eed17dae841&th=1",
             "textCard": "Here is a multi-level cat tree.",
@@ -52,7 +52,7 @@
         },
         {
             "titleCard": "Scratching Ball",
-            "imageSrcCard": "../public/image/jouet-boule.jpg",
+            "imageSrcCard": "../public/assets/jouet-boule.jpg",
             "imageAltCard": "scratching ball for cats",
             "linkCard": "https://www.temu.com/fr/kuiper/n9.html?subj=googleshopping-landingpage&_bg_fs=1&_p_rfs=1&_x_ads_channel=google&_x_ads_sub_channel=shopping&_x_login_type=Google&_x_vst_scene=adg&mkt_rec=1&goods_id=601099512666448&sku_id=17592191921191&_x_ns_sku_id=17592191921191&_x_gmc_account=742384653&_x_ads_account=5198328713&_x_ads_set=20819421092&_x_ads_id=153466930022&_x_ads_creative_id=682926604759&_x_ns_source=g&_x_ns_gclid=EAIaIQobChMIuJmirN-KhgMV_gcGAB2UKA2HEAQYASABEgKltfD_BwE&_x_ns_placement=&_x_ns_match_type=&_x_ns_ad_position=&_x_ns_product_id=17592191921191&_x_ns_target=&_x_ns_devicemodel=&_x_ns_wbraid=Cj8KCQjw0YGyBhDZARIuALjKpTicowYrAIvY__9DmdPRr9qDjpxHdiszH56rf1yFJXJfU0F8cBirvBzKvhoCxsk&_x_ns_gbraid=0AAAAAo4mICEucQkQlfNhiZNDaXSDrINen&_x_ns_targetid=pla-2264719084720&gad_source=1&gclid=EAIaIQobChMIuJmirN-KhgMV_gcGAB2UKA2HEAQYASABEgKltfD_BwE&adg_ctx=f-1098b79c",
             "textCard": "Here is a scratching ball made of rope for cats.",

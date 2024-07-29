@@ -2,7 +2,7 @@
     "imagedTitleP":
     {
         "title":"Origin",
-        "imageSrc":"../public/assets/photo-home.jpg",
+        "imageSrc":"./assets/photo-home.jpg",
         "imageAlt":"Ragdoll Cat"
     },
     "titleP":

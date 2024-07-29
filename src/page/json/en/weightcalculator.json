@@ -2,7 +2,7 @@
     "titleP":
     {
         "title":"Weight Chart for Ragdolls",
-        "src":"../public/assets/graphique-poids.png",
+        "src":"./assets/graphique-poids.png",
         "alt":"Weight Chart for Ragdolls"
     },
     "legendGraph":

@@ -2,7 +2,7 @@
     "paragraph":
     {
         "title":"Entretien",
-        "imageSrc":"../public/assets/photo-entretien.jpg",
+        "imageSrc":"./assets/photo-entretien.jpg",
         "imageAlt":"Chat Ragdoll",
         "content":"Avec un pelage mi-long et un sous-poil modérément dense, le Ragdoll n'exige pas un entretien fastidieux. Un brossage régulier permet de maintenir la beauté et la propreté de son pelage, ainsi que la bonne santé de sa peau." ,
         "content2":"Il est recommandé de brosser le Ragdoll une à deux fois par semaine pour l'aider à se débarrasser de ses poils morts, ce qui évite qu'ils s'accumulent dans son intestin et forment des trichobézoards. Lors du brossage, il est important de porter une attention particulière à la zone du 'pantalon' située sur l'arrière-train du chat, où le poil est généralement plus dense et fourni. De temps en temps, le Ragdoll peut également avoir besoin d'un bain. Les soins dentaires sont indispensables pour prévenir les maladies parodontales causées par le tartre, et il est également nécessaire de couper régulièrement ses griffes, car il les use très lentement."
@@ -10,7 +10,7 @@
     "card":[
         {
             "titleCard": "Brosse",
-            "imageSrcCard": "../public/assets/img-brosse.jpg",
+            "imageSrcCard": "./assets/img-brosse.jpg",
             "imageAltCard": "Brosse pour chat",
             "linkCard": "#",
             "textCard": "Voici une brosse pour chat de la marque NekoCare.",
@@ -18,7 +18,7 @@
         },
         {
             "titleCard": "Coupe griffe",
-            "imageSrcCard": "../public/assets/img-coupe-griffes.jpg",
+            "imageSrcCard": "./assets/img-coupe-griffes.jpg",
             "imageAltCard": "Coupe griffe pour chat",
             "linkCard": "#",
             "textCard": "Voici un coupe griffe de la marque PattesVelours.",
@@ -26,7 +26,7 @@
         },
         {
             "titleCard": "Dentifrice",
-            "imageSrcCard": "../public/assets/img-dentifrice.jpg",
+            "imageSrcCard": "./assets/img-dentifrice.jpg",
             "imageAltCard": "Dentifrice pour chat",
             "linkCard": "#",
             "textCard": "Voici un dentifrice de la marque RonronNature.",

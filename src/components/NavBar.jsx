@@ -43,18 +43,18 @@ export default function NavBar (){
                     aria-expanded="false" 
                     aria-label="Toggle navigation"
                 >
-                    <img src="./public/assets/menu-regular.png" alt="Menu" className="burger-icon" /> 
-                    <img src="./public/assets/x-regular.png" alt="Close" className="close-icon" /> 
+                    <img src="/assets/menu-regular.png" alt="Menu" className="burger-icon" /> 
+                    <img src="/assets/x-regular.png" alt="Close" className="close-icon" /> 
                 </button>
                 <div className="name-site d-flex justify-items-center">
-                    <img id="logo-fluffragdolls" src="./public/assets/logo-fluffyragdolls.png" alt="Logo FluffyRagdolls" />
+                    <img id="logo-fluffragdolls" src="/assets/logo-fluffyragdolls.png" alt="Logo FluffyRagdolls" />
                     <NavLink to="/" onClick={hide}>
                         <h1>FluffyRagdolls</h1>
                     </NavLink>
                 </div>
                 <button>
                     <NavLink to="/connexion" onClick={hide}>
-                        <img src="./public/assets/user-circle.png" alt="User" />
+                        <img src="/assets/user-circle.png" alt="User" />
                     </NavLink>
                 </button>
             </div>
@@ -79,10 +79,10 @@ export default function NavBar (){
                 <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/calcul">{navBarData.linkWeightCalculator}</NavLink>
                 <hr/>
                 <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/forum">
-                    <img src="../public\image\chat-solid.png"/>{navBarData.linkForum}
+                    <img src="/assets/chat-solid.png"/>{navBarData.linkForum}
                 </NavLink>
                 <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/connexion">
-                    <img src="../public\image\user-circle.png"/> {navBarData.linkConnection}
+                    <img src="/assets/user-circle.png"/> {navBarData.linkConnection}
                 </NavLink>
             </div>)
     }

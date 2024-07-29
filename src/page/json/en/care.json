@@ -2,7 +2,7 @@
     "paragraph":
     {
         "title":"Grooming",
-        "imageSrc":"../public/assets/photo-entretien.jpg",
+        "imageSrc":"./assets/photo-entretien.jpg",
         "imageAlt":"Ragdoll Cat",
         "content":"With a medium-length coat and a moderately dense undercoat, the Ragdoll does not require tedious grooming. Regular brushing helps maintain the beauty and cleanliness of its coat, as well as the good health of its skin." ,
         "content2":"It is recommended to brush the Ragdoll once or twice a week to help it get rid of dead hair, preventing them from accumulating in its intestines and forming trichobezoars. When brushing, it is important to pay special attention to the 'pants' area on the cat's hindquarters, where the hair is usually denser and thicker. Occasionally, the Ragdoll may also need a bath. Dental care is essential to prevent periodontal diseases caused by tartar, and it is also necessary to trim its claws regularly, as they wear down very slowly."
@@ -10,7 +10,7 @@
     "card":[
         {
             "titleCard": "Brush",
-            "imageSrcCard": "../public/assets/img-brosse.jpg",
+            "imageSrcCard": "./assets/img-brosse.jpg",
             "imageAltCard": "Cat brush",
             "linkCard": "#",
             "textCard": "Here is a cat brush from the NekoCare brand.",
@@ -18,7 +18,7 @@
         },
         {
             "titleCard": "Nail Clipper",
-            "imageSrcCard": "../public/assets/img-coupe-griffes.jpg",
+            "imageSrcCard": "./assets/img-coupe-griffes.jpg",
             "imageAltCard": "Nail Clipper",
             "linkCard": "#",
             "textCard": "Here is a cat nail clipper from the PattesVelours brand.",
@@ -26,7 +26,7 @@
         },
         {
             "titleCard": "Toothpaste",
-            "imageSrcCard": "../public/assets/img-dentifrice.jpg",
+            "imageSrcCard": "./assets/img-dentifrice.jpg",
             "imageAltCard": "Toothpaste",
             "linkCard": "#",
             "textCard": "Here is a cat toothpaste from the RonronNature brand.",

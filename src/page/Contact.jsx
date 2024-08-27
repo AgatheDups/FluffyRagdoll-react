@@ -57,7 +57,7 @@ export default function Contact (){
                                         <textarea type="text" id="message" name="message"  placeholder={contactData.message} required/> 
                                     </div>
                                 </form>
-                                <button type="submit" className="btn btn-danger">{contactData.buttonSubmit}</button>
+                                <button type="submit" className={`btn ${mailSent ? "btn-success" : "btn-danger"}`}>{contactData.buttonSubmit}</button>
                             </div>
                         </div>
                     </div>

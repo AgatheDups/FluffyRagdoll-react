@@ -18,7 +18,7 @@ export default function Contact (){
             return
         }
         emailjs
-        .sendForm('service_6yjr2vm', 'template_io72mpb', form.current, {
+        .sendForm('service_0t0e16q', 'template_io72mpb', form.current, {
           publicKey: 'ZlnVL4Dadk8igzUm9',
         })
         .then(

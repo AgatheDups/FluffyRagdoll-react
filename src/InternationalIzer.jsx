@@ -23,6 +23,7 @@ import navBarDataFr from "./components/json/fr/navbar.json"
 import navBarDataEn from "./components/json/en/navbar.json"
 
 
+
 export function getHomeData (){
     if(localStorage.getItem("language") == "fr" || localStorage.getItem("language") == null){
         return homeDataFr

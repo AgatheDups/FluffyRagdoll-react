@@ -24,7 +24,6 @@ import navBarDataEn from "./components/json/en/navbar.json"
 
 
 export function getHomeData (){
-    console.log(localStorage.getItem("language"));
     if(localStorage.getItem("language") == "fr" || localStorage.getItem("language") == null){
         return homeDataFr
     } else {

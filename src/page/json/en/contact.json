@@ -4,5 +4,6 @@
     "email":"Email",
     "subject":"Subject",
     "message":"Message",
-    "buttonSubmit":"Submit"
+    "buttonPreSubmit":"Submit",
+    "buttonPostSubmit":"Thank you !"
 }

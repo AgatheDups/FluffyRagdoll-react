@@ -13,12 +13,13 @@ export default function Contact (){
     const [mailSent, setMailSent] = useState(false);
 
     const sendEmail = (e) => {
+        console.log("ouais");
         e.preventDefault();
         if(mailSent){
             return
         }
         emailjs
-        .sendForm('service_0t0e16q', 'template_io72mpb', form.current, {
+        .sendForm('service_6yjr2vm', 'template_bgykacf', form.current, {
           publicKey: 'ZlnVL4Dadk8igzUm9',
         })
         .then(
@@ -36,9 +37,9 @@ export default function Contact (){
             <div id="content-panel-card">
                 <div className="row justify-content-center">
                     <div className="col-md-6">
-                        <div className="card bg-light mb-4 custom-shadow">
+                        <div className="card bg-light mb-4 custom-shadow" id="card-contact-form">
                             <div className="card-body card-contact">
-                            <h6>{contactData.title}</h6>
+                                <h6>{contactData.title}</h6>
                                 <form ref={form} onSubmit={sendEmail}>
                                     <div className="box d-flex box-contact">
                                         <label htmlFor="name"/>
@@ -56,8 +57,10 @@ export default function Contact (){
                                         <label htmlFor="message"/>
                                         <textarea type="text" id="message" name="message"  placeholder={contactData.message} required/> 
                                     </div>
+                                    <div className="btn-contact">
+                                        <button type="submit" disabled={mailSent} className={`btn ${mailSent ? "btn-success" : "btn-danger"}`}>{mailSent ? contactData.buttonPostSubmit : contactData.buttonPreSubmit}</button>
+                                    </div>
                                 </form>
-                                <button type="submit" className={`btn ${mailSent ? "btn-success" : "btn-danger"}`}>{contactData.buttonSubmit}</button>
                             </div>
                         </div>
                     </div>

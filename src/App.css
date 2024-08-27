@@ -425,6 +425,10 @@ textarea {
     padding: 5px;
 }
 
+#card-contact-form{
+    min-width: 350px;
+}
+
 .card-contact{
     display: flex;
     flex-direction: column;
@@ -441,6 +445,12 @@ h6{
     font-weight: bold;
     color: #336f9a;
 }
+
+.btn-contact{
+    display: flex;
+
+}
+
 
 
 

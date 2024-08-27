@@ -4,5 +4,6 @@
     "email":"Email",
     "subject":"Sujet",
     "message":"Message",
-    "buttonSubmit":"Envoyer"
+    "buttonPreSubmit":"Envoyer",
+    "buttonPostSubmit":"Merci !"
 }

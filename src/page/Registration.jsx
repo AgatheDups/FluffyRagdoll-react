@@ -12,14 +12,11 @@ export default function Registration (){
     const [registrationData, _] = useState(getRegistrationData())
     const [showForms, setShowForms] = useState(false);
 
-    // Function for du button radio is_breeder
-    const handleRadioChange = (event) => {
-      if (event.target.value === "yes") {
-        setShowForms(true);
-      } else {
-        setShowForms(false);
-      }
+    // Function to toggle the visibility of the additional form fields
+    const handleRadioChange = () => {
+        setShowForms((prevState) => !prevState); // Toggle the state
     };
+
     return (
         <motion.div initial={{opacity:0}} animate={{opacity:1}}>
             <div id="content-panel-card">
@@ -49,7 +46,7 @@ export default function Registration (){
                                             <input type="tel" className="form-control" id="phone-number" placeholder={registrationData.numberPhone}/>
                                         </form>
                                         </div>
-                                    )};
+                                    )}
                                     <div className="d-flex justify-content-end">
                                     <button type="submit" className="btn btn-danger">{registrationData.buttonConnection}</button>
                                     </div>

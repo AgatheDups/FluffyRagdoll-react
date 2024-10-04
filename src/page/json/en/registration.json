@@ -3,5 +3,6 @@
     "pCity":"City",   
     "labelBreeder":"Are you breeder ?",
     "numberSiret":"Siret",
-    "numberPhone":"Phone number"
+    "numberPhone":"Phone number",
+    "buttonConnection":"Sing In"
 }

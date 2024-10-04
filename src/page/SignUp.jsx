@@ -2,6 +2,7 @@
 import { useState } from "react";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion"
+import { NavLink } from "react-router-dom";
 import { getSignUpData } from "../InternationalIzer";
 
 const isEmail = (email) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email.toUpperCase());
@@ -90,7 +91,7 @@ export default function SignUp (){
                                         <span className="showPassword-verif"onClick={toggleVisibilityVerif}><ion-icon name={passwordVerifVisible ? "eye-outline" : "eye-off-outline"}></ion-icon></span>
                                     </div>
                                     <div className="d-flex justify-content-end">
-                                    <button type="submit" className="btn btn-danger">{signUpData.buttonConnection}</button>
+                                    <button type="submit" className="btn btn-danger"><NavLink to="/inscription">{signUpData.buttonConnection}</NavLink></button>
                                     </div>
                                 </form>
                             </div>

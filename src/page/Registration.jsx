@@ -35,7 +35,7 @@ export default function Registration (){
                                     </div>
                                     <div className="box d-flex">
                                         <label htmlFor="breeder-verif" className="form-label">{registrationData.labelBreeder}</label>
-                                        <input type="radio" className="form-check-input" id="breeder-verif" name="showForms" onChange={handleRadioChange}/>
+                                        <input type="checkbox" className="form-check-input" id="breeder-verif" name="showForms" onChange={handleRadioChange}/>
                                     </div>
                                     {showForms && (
                                         <div>

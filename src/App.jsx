@@ -11,7 +11,6 @@ import Forum from './page/Forum'
 import SignIn from './page/SignIn'
 import SignUp from './page/SignUp'
 import LostPassword from './page/LostPassword'
-import Registration from './page/Registration'
 import NotFound from './page/NotFound'
 import ScrollToTop from './hooks/ScrollToTop'
 import Contact from './page/Contact'
@@ -90,14 +89,6 @@ const router = createBrowserRouter([
     element: <div>
       <NavBar/>
       <LostPassword/>
-      <ScrollToTop/>
-    </div>
-  },
-  {
-    path: '/inscription-page2',
-    element: <div>
-      <NavBar/>
-      <Registration/>
       <ScrollToTop/>
     </div>
   },

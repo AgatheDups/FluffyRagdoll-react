@@ -412,6 +412,18 @@ ion-icon[name="close-outline"]{
     color: #F34840;
 }
 
+.form-toggle{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    margin: 0;
+}
+
+#breeder-verif{
+    margin-left: 10px;
+}
+
+
 
 /* Contact */
 

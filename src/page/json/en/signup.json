@@ -3,5 +3,10 @@
     "pEmailVerif":"Email verification",
     "pPassword":"Password",
     "pPasswordVerif":"Password verification",
-    "buttonConnection":"Sign up"
+    "pPseudo":"Pseudo",   
+    "pCity":"City",   
+    "labelBreeder":"Are you breeder ?",
+    "numberSiret":"Siret",
+    "numberPhone":"Phone number",
+    "buttonConnection":"Sing In"
 }

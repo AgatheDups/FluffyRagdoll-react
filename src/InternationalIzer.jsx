@@ -11,8 +11,6 @@ import signInDataFr from "./page/json/fr/signin.json"
 import signInDataEn from "./page/json/en/signin.json"
 import signUpDataFr from "./page/json/fr/signup.json"
 import signUpDataEn from "./page/json/en/signup.json"
-import registrationDataFr from "./page/json/fr/registration.json"
-import registrationDataEn from "./page/json/en/registration.json"
 import foodDataFr from "./page/json/fr/food.json"
 import foodDataEn from "./page/json/en/food.json"
 import careDataFr from "./page/json/fr/care.json"
@@ -71,14 +69,6 @@ export function getSignUpData (){
         return signUpDataFr
     } else {
         return signUpDataEn
-    }
-}
-
-export function getRegistrationData (){
-    if(localStorage.getItem("language") == "fr" || localStorage.getItem("language") == null){
-        return registrationDataFr
-    } else {
-        return registrationDataEn
     }
 }
 

@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion"
-import { NavLink } from "react-router-dom";
 import { getSignUpData } from "../InternationalIzer";
 
 const isEmail = (email) => /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email.toUpperCase());
@@ -11,6 +10,13 @@ export default function SignUp (){
     // Call Json
     // eslint-disable-next-line no-unused-vars
     const [signUpData, _] = useState(getSignUpData())
+    const [showForms, setShowForms] = useState(false);
+
+    
+    // Function to toggle the visibility of the additional form fields
+    const handleRadioChange = () => {
+        setShowForms((prevState) => !prevState); // Toggle the state
+    };
 
 
     // function to change invalid icon to valid for email 
@@ -23,17 +29,20 @@ export default function SignUp (){
         const errors = {};
     
         if (!isEmail(values.email)) {
-          errors.email = "Format incorrect";
+            errors.email = "Format incorrect";
         }
 
         if (values.emailVerif != values.email || values.emailVerif === "" ) {
             errors.emailVerif = "Email différent";
-          }
+        }
+
+        if(password != passwordVerif) {
+            errors.passwordVerif = "Mots de passes différents";
+        }
 
         setErrors(errors);
-
-        if (!Object.keys(errors).length) {
-          alert(JSON.stringify(values, null, 2));
+        if (Object.keys(errors).length == 0) {
+            alert(JSON.stringify(values, null, 2));
         }
     };
 
@@ -64,7 +73,7 @@ export default function SignUp (){
                 <div className="row justify-content-center">
                     <div className="col-md-6">
                         <div className="card bg-light mb-4 custom-shadow">
-                            <div className="card-body">
+                            <div className="card-body card-singn">
                                 <form action="" method="post" onSubmit={validateAndSubmitForm}>
                                     <div>
                                         <div className="box d-flex">
@@ -90,8 +99,30 @@ export default function SignUp (){
                                         <input type={passwordVerifVisible ? 'text' : 'password'} value={passwordVerif} onChange={(e) => setPasswordVerif(e.target.value)} className="form-control" id="password-verif" placeholder={signUpData.pPasswordVerif} required/>
                                         <span className="showPassword-verif"onClick={toggleVisibilityVerif}><ion-icon name={passwordVerifVisible ? "eye-outline" : "eye-off-outline"}></ion-icon></span>
                                     </div>
+                                    <div className="box d-flex">
+                                        <label htmlFor="pseudo" className="form-label"/>
+                                        <input type="text" className="form-control" id="pseudo" placeholder={signUpData.pPseudo} required/>
+                                    </div>
+                                    <div className="box d-flex">
+                                        <label htmlFor="city" className="form-label"/>
+                                        <input type="text" className="form-control" id="city" placeholder={signUpData.pCity} required/>
+                                    </div>
+                                    <div className="box d-flex">
+                                        <label htmlFor="breeder-verif" className="form-label">{signUpData.labelBreeder}</label>
+                                        <input type="checkbox" className="form-check-input" id="breeder-verif" name="showForms" onChange={handleRadioChange}/>
+                                    </div>
+                                    {showForms && (
+                                        <div>
+                                        <form className="form-toggle">
+                                            <label htmlFor="siret" className="form-label"/>
+                                                <input type="number" className="form-control" id="siret" min={10000000000000} max={99999999999999} placeholder={signUpData.numberSiret}/>
+                                            <label htmlFor="phone-number" className="form-label"/>
+                                            <input type="tel" className="form-control" id="phone-number" placeholder={signUpData.numberPhone}/>
+                                        </form>
+                                        </div>
+                                    )}
                                     <div className="d-flex justify-content-end">
-                                    <button type="submit" className="btn btn-danger"><NavLink to="/inscription">{signUpData.buttonConnection}</NavLink></button>
+                                    <button type="submit" className="btn btn-danger">{signUpData.buttonConnection}</button>
                                     </div>
                                 </form>
                             </div>

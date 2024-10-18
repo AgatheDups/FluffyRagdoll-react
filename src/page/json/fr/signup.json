@@ -3,5 +3,10 @@
     "pEmailVerif":"Vérification email",
     "pPassword":"Mot de passe",
     "pPasswordVerif":"Vérification mot de passe",
+    "pPseudo":"Pseudo",   
+    "pCity":"Ville",   
+    "labelBreeder":"Êtes-vous un éleveur ?",
+    "numberSiret":"Siret",
+    "numberPhone":"Numéro de téléphone",
     "buttonConnection":"Connexion"
 }

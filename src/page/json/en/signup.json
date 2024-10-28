@@ -8,5 +8,10 @@
     "labelBreeder":"Are you breeder ?",
     "numberSiret":"Siret",
     "numberPhone":"Phone number",
-    "buttonConnection":"Register"
+    "buttonConnection":"Register",
+    "paragraph":
+    {
+        "first": "Personal data of the website users is collected as part of the registration process for the forum, profile management, and adoption inquiries. FluffyRagdolls is committed to maintaining the confidentiality of personal information collected, which will never be shared with third parties without prior consent.",
+        "second":"In accordance with data protection laws, you have the right to access, rectify, and delete your information, which can be exercised by contacting agathe.dupuis.pro@gmail.com."
+    }
 }

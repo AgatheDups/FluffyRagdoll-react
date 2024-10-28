@@ -423,7 +423,15 @@ ion-icon[name="close-outline"]{
     margin-left: 10px;
 }
 
-
+.div-p-register{
+    padding-top: 30px;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+.p-register{
+    color: #476376;
+    font-size: 14px;
+}
 
 /* Contact */
 

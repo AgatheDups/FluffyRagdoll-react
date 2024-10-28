@@ -74,9 +74,9 @@ export default function SignIn (){
                                     <button type="submit" className="btn btn-danger">{signInData.buttonConnection}</button>
                                     </div>
                                     <div>
-                                    <NavLink to="/motdepasse-oublier">{signInData.linkLostP}</NavLink>
+                                    <NavLink to="/forgotten-password">{signInData.linkLostP}</NavLink>
                                     <br/>
-                                    <NavLink to="/inscription">{signInData.linkSignUp}</NavLink>
+                                    <NavLink to="/register">{signInData.linkSignUp}</NavLink>
                                     </div>
                                 </form>
                             </div>

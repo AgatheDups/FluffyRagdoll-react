@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 import { getWeightCalculatorData } from "../InternationalIzer";
 
 
-export default function WeightCaculator (){
+export default function WeightCalculator (){
     // Call Json
     // eslint-disable-next-line no-unused-vars
     const [weightCalculatorData, _] = useState(getWeightCalculatorData())

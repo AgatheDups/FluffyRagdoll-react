@@ -6,7 +6,7 @@ import Home from './page/Home'
 import Care from './page/Care'
 import Food from './page/Food'
 import Adoption from './page/Adoption'
-import WeightCaculator from './page/WeightCaculator'
+import WeightCalculator from './page/WeightCalculator'
 import Forum from './page/Forum'
 import SignIn from './page/SignIn'
 import SignUp from './page/SignUp'
@@ -15,7 +15,7 @@ import NotFound from './page/NotFound'
 import ScrollToTop from './hooks/ScrollToTop'
 import Contact from './page/Contact'
 
-
+export const apiHost = "http://localhost:8000";
 
 const router = createBrowserRouter([
   {
@@ -27,7 +27,7 @@ const router = createBrowserRouter([
     </div>
   },
   {
-    path: '/entretien',
+    path: '/care',
     element: <div>
       <NavBar/>
       <Care/>
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
   }
   ,
   {
-    path: '/alimentation',
+    path: '/food',
     element: <div>
       <NavBar/>
       <Food/>
@@ -53,10 +53,10 @@ const router = createBrowserRouter([
     </div>
   },
   {
-    path: '/calcul',
+    path: '/calculator',
     element: <div>
       <NavBar/>
-      <WeightCaculator/>
+      <WeightCalculator/>
       <ScrollToTop/>
     </div>
   },
@@ -69,7 +69,7 @@ const router = createBrowserRouter([
   </div>
   },
   {
-    path: '/connexion',
+    path: '/signin',
     element: <div>
       <NavBar/>
       <SignIn/>
@@ -77,7 +77,7 @@ const router = createBrowserRouter([
     </div>
   },
   {
-    path: '/inscription',
+    path: '/register',
     element: <div>
       <NavBar/>
       <SignUp/>
@@ -85,7 +85,7 @@ const router = createBrowserRouter([
     </div>
   },
   {
-    path: '/motdepasse-oublier',
+    path: '/forgotten-password',
     element: <div>
       <NavBar/>
       <LostPassword/>

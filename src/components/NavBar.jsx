@@ -53,7 +53,7 @@ export default function NavBar (){
                     </NavLink>
                 </div>
                 <button>
-                    <NavLink to="/connexion" onClick={hide}>
+                    <NavLink to="/signin" onClick={hide}>
                         <img src="/assets/user-circle.png" alt="User" />
                     </NavLink>
                 </button>
@@ -70,18 +70,18 @@ export default function NavBar (){
             <div className="navbar-nav" onBlur={() => {focusOnNavElement = false; checkNavFocus()}} onPointerDown={() => focusOnNavElement = true}>        
                 <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/">{navBarData.linkHome}</NavLink>
                 <hr/>
-                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/entretien">{navBarData.linkCare}</NavLink>
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/care">{navBarData.linkCare}</NavLink>
                 <hr/>
-                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/alimentation">{navBarData.linkFood}</NavLink>
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/food">{navBarData.linkFood}</NavLink>
                 <hr/>
                 <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/adoption">{navBarData.linkAdoption}</NavLink>
                 <hr/>
-                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/calcul">{navBarData.linkWeightCalculator}</NavLink>
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/calculator">{navBarData.linkWeightCalculator}</NavLink>
                 <hr/>
                 <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/forum">
                     <img src="/assets/chat-solid.png"/>{navBarData.linkForum}
                 </NavLink>
-                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/connexion">
+                <NavLink className="nav-item" onClick={toggle} onBlur={hide} onFocus={show} to="/signin">
                     <img src="/assets/user-circle.png"/> {navBarData.linkConnection}
                 </NavLink>
             </div>)
